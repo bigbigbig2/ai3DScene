@@ -1,4 +1,4 @@
-﻿<script setup lang="ts">
+<script setup lang="ts">
 import { Refresh, Search } from '@element-plus/icons-vue'
 import { computed, ref } from 'vue'
 import type { ArtifactItem } from '../../api/types'
@@ -15,6 +15,8 @@ const groups = [
   { key: 'detection', label: '检测/分割' },
   { key: 'geometry', label: '几何' },
   { key: 'spatial', label: '空间结果' },
+  { key: 'visualization', label: '可视化' },
+  { key: 'pointcloud', label: '点云' },
   { key: 'evaluation', label: '评估' },
   { key: 'logs', label: '日志' },
 ] as const

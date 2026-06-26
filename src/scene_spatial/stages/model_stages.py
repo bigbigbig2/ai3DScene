@@ -1,4 +1,4 @@
-﻿from __future__ import annotations
+from __future__ import annotations
 
 import shutil
 from datetime import UTC, datetime
@@ -12,6 +12,13 @@ from scene_spatial.stages.fake_pipeline import (
     _read_json,
     _write_json,
 )
+from scene_spatial.visualization.depth import (
+    render_depth_preview,
+    render_normals_preview,
+    render_validity_preview,
+)
+from scene_spatial.visualization.masks import render_detection_overlay, render_mask_contact_sheet
+from scene_spatial.visualization.pointcloud import write_scene_pointcloud
 
 
 def _worker_path(task_dir: Path, value: object) -> Path:
@@ -102,15 +109,21 @@ class SamSegmentStage(FakeSamSegmentStage):
         if mask_dir.exists():
             shutil.copytree(mask_dir, final_mask_dir, dirs_exist_ok=True)
 
+        outputs = {
+            "request": "stages/sam_request_attempt_1.json",
+            "response": "stages/sam_response_attempt_1.json",
+            "detections": "detection/detections.json",
+            "mask_dir": "detection/masks",
+        }
+        if render_detection_overlay(ctx.task_dir):
+            outputs["detection_overlay"] = "visualizations/detection_overlay.png"
+        if render_mask_contact_sheet(ctx.task_dir):
+            outputs["mask_contact_sheet"] = "visualizations/mask_contact_sheet.png"
+
         return StageResult.completed(
             self.name,
             started_at,
-            outputs={
-                "request": "stages/sam_request_attempt_1.json",
-                "response": "stages/sam_response_attempt_1.json",
-                "detections": "detection/detections.json",
-                "mask_dir": "detection/masks",
-            },
+            outputs=outputs,
             metrics={
                 "duration_ms": int(response.get("durationMs", 0)),
                 "peak_gpu_memory_mib": int(response.get("peakGpuMemoryMiB", 0)),
@@ -209,18 +222,28 @@ class MogeEstimateStage(FakeMogeEstimateStage):
                 f"MoGe outputs are missing: {missing}",
             )
 
+        outputs = {
+            "request": "stages/moge_request_attempt_1.json",
+            "response": "stages/moge_response_attempt_1.json",
+            "points": "geometry/points.npy",
+            "depth": "geometry/depth.npy",
+            "normals": "geometry/normals.npy",
+            "validity": "geometry/validity.npy",
+            "camera": "geometry/camera.json",
+        }
+        if render_depth_preview(ctx.task_dir):
+            outputs["depth_preview"] = "visualizations/depth.png"
+        if render_normals_preview(ctx.task_dir):
+            outputs["normals_preview"] = "visualizations/normals.png"
+        if render_validity_preview(ctx.task_dir):
+            outputs["validity_preview"] = "visualizations/validity.png"
+        if write_scene_pointcloud(ctx.task_dir):
+            outputs["pointcloud"] = "pointcloud/scene.ply"
+
         return StageResult.completed(
             self.name,
             started_at,
-            outputs={
-                "request": "stages/moge_request_attempt_1.json",
-                "response": "stages/moge_response_attempt_1.json",
-                "points": "geometry/points.npy",
-                "depth": "geometry/depth.npy",
-                "normals": "geometry/normals.npy",
-                "validity": "geometry/validity.npy",
-                "camera": "geometry/camera.json",
-            },
+            outputs=outputs,
             metrics={
                 "duration_ms": int(response.get("durationMs", 0)),
                 "peak_gpu_memory_mib": int(response.get("peakGpuMemoryMiB", 0)),

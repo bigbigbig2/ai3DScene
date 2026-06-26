@@ -1,4 +1,4 @@
-﻿<script setup lang="ts">
+<script setup lang="ts">
 import { useTaskStore } from '../../stores/taskStore'
 import ImagePreview from './ImagePreview.vue'
 import JsonViewer from './JsonViewer.vue'
@@ -21,6 +21,12 @@ const task = useTaskStore()
     <template v-else>
       <ImagePreview
         v-if="task.selectedArtifactPreview.kind === 'image' && task.selectedArtifactPreview.objectUrl"
+        :src="task.selectedArtifactPreview.objectUrl"
+        :title="task.selectedArtifactPreview.title"
+      />
+      <iframe
+        v-else-if="task.selectedArtifactPreview.kind === 'html' && task.selectedArtifactPreview.objectUrl"
+        class="html-preview"
         :src="task.selectedArtifactPreview.objectUrl"
         :title="task.selectedArtifactPreview.title"
       />

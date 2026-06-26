@@ -1,4 +1,4 @@
-﻿import { defineStore } from 'pinia'
+import { defineStore } from 'pinia'
 import { computed, ref } from 'vue'
 import { getArtifactBlob, getArtifactText, getResult, listArtifacts } from '../api/artifacts'
 import { submitCorrection as postCorrection } from '../api/corrections'
@@ -42,6 +42,9 @@ async function blobToPreview(artifact: ArtifactItem, blob: Blob): Promise<Artifa
   }
   if (artifact.mimeType?.startsWith('image/')) {
     return { kind: 'image', title, objectUrl: URL.createObjectURL(blob) }
+  }
+  if (artifact.mimeType === 'text/html' || artifact.relativePath.endsWith('.html') || artifact.relativePath.endsWith('.htm')) {
+    return { kind: 'html', title, objectUrl: URL.createObjectURL(blob) }
   }
   if (artifact.mimeType === 'application/json' || artifact.relativePath.endsWith('.json')) {
     const text = await blob.text()
@@ -98,6 +101,8 @@ export const useTaskStore = defineStore('task', () => {
       detection: artifacts.value.filter((item) => item.relativePath.startsWith('detection/')),
       geometry: artifacts.value.filter((item) => item.relativePath.startsWith('geometry/')),
       spatial: artifacts.value.filter((item) => item.relativePath.startsWith('spatial/')),
+      visualization: artifacts.value.filter((item) => item.relativePath.startsWith('visualizations/')),
+      pointcloud: artifacts.value.filter((item) => item.relativePath.startsWith('pointcloud/')),
       evaluation: artifacts.value.filter((item) => item.relativePath.startsWith('evaluation/')),
       logs: artifacts.value.filter((item) => item.relativePath.startsWith('logs/')),
     }

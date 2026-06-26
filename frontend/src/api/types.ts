@@ -55,7 +55,7 @@ export interface StageResult {
 
 export type CorrectionType = 'ground-points' | 'scale-anchor' | 'object-transform'
 
-export type ArtifactPreviewKind = 'empty' | 'image' | 'json' | 'text' | 'binary' | 'directory' | 'error'
+export type ArtifactPreviewKind = 'empty' | 'image' | 'html' | 'json' | 'text' | 'binary' | 'directory' | 'error'
 
 export interface ArtifactPreview {
   kind: ArtifactPreviewKind
