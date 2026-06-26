@@ -4,14 +4,7 @@ Detailed current engineering guide:
 
 ```text
 docs/current-project-guide.md
-```
-
-Frontend debug console:
-
-```text
-frontend/
-docs/frontend-debug-ui-design.md
-```
+`````
 
 This repository is the engineering skeleton for the medium-scale Scene Spatial PoC.
 The implementation follows `scene-spatial-poc-宸ョ▼鏋舵瀯涓庡惎鍔ㄥ疄鏂芥柟妗?涓瓑瑙勬ā鐗?md`.
@@ -44,8 +37,6 @@ Server deployment is intended to use:
 /home/ai3d/tmp/scene-spatial
 /home/ai3d/models/scene-spatial
 ```
-
-
 
 
 
