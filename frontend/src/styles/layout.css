@@ -1,0 +1,388 @@
+.app-shell {
+  min-height: 100vh;
+  padding: 18px;
+}
+
+.service-bar {
+  align-items: center;
+  background: rgba(255, 255, 255, 0.96);
+  border: 1px solid #dce4f2;
+  border-radius: 8px;
+  display: grid;
+  gap: 16px;
+  grid-template-columns: 260px minmax(0, 1fr) auto;
+  min-height: 72px;
+  padding: 14px 16px;
+  position: sticky;
+  top: 12px;
+  z-index: 10;
+}
+
+.service-bar-main,
+.service-actions,
+.button-row {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.api-target,
+.task-chip {
+  background: #f1f5f9;
+  border: 1px solid #dbe4ef;
+  border-radius: 999px;
+  color: #334155;
+  font-size: 12px;
+  max-width: 360px;
+  overflow: hidden;
+  padding: 6px 10px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.status-pill {
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 6px 10px;
+}
+
+.status-online {
+  background: #dcfce7;
+  color: #166534;
+}
+
+.status-not-ready,
+.status-checking {
+  background: #fef3c7;
+  color: #92400e;
+}
+
+.status-offline {
+  background: #fee2e2;
+  color: #991b1b;
+}
+
+.workbench-grid {
+  align-items: start;
+  display: grid;
+  gap: 16px;
+  grid-template-columns: 320px minmax(520px, 1fr) 480px;
+  margin-top: 16px;
+}
+
+.panel {
+  display: grid;
+  gap: 14px;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.98);
+  border: 1px solid #dce4f2;
+  border-radius: 8px;
+  box-shadow: 0 10px 28px rgba(15, 23, 42, 0.06);
+  display: grid;
+  gap: 12px;
+  min-width: 0;
+  padding: 14px;
+}
+
+.card-title,
+.subsection-title {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  min-height: 28px;
+}
+
+.card-title span,
+.subsection-title span {
+  font-size: 14px;
+  font-weight: 800;
+}
+
+.upload-box {
+  align-items: center;
+  background: #f8fafc;
+  border: 1px dashed #9db4d6;
+  border-radius: 8px;
+  color: #385275;
+  cursor: pointer;
+  display: grid;
+  gap: 8px;
+  justify-items: center;
+  min-height: 112px;
+  padding: 18px;
+  text-align: center;
+}
+
+.upload-box input {
+  display: none;
+}
+
+.form-grid {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 1fr;
+}
+
+.form-grid label {
+  display: grid;
+  gap: 6px;
+}
+
+.form-grid label > span {
+  color: #64748b;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.meta-list {
+  display: grid;
+  gap: 8px 10px;
+  grid-template-columns: 120px minmax(0, 1fr);
+  margin: 0;
+}
+
+.meta-list.compact {
+  grid-template-columns: 100px minmax(0, 1fr);
+}
+
+.meta-list dt {
+  color: #64748b;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.meta-list dd {
+  color: #172033;
+  font-size: 12px;
+  margin: 0;
+  overflow-wrap: anywhere;
+}
+
+.recent-tasks {
+  display: grid;
+  gap: 6px;
+}
+
+.recent-task {
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 6px;
+  color: #334155;
+  cursor: pointer;
+  overflow: hidden;
+  padding: 7px 9px;
+  text-align: left;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.timeline-list,
+.artifact-list {
+  display: grid;
+  gap: 8px;
+}
+
+.stage-row {
+  align-items: center;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  color: #172033;
+  cursor: pointer;
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 32px minmax(0, 1fr) 92px auto;
+  min-height: 58px;
+  padding: 9px;
+  text-align: left;
+}
+
+.stage-row.active {
+  border-color: #2563eb;
+  box-shadow: inset 3px 0 0 #2563eb;
+}
+
+.stage-index {
+  align-items: center;
+  background: #e2e8f0;
+  border-radius: 999px;
+  display: inline-flex;
+  font-size: 12px;
+  font-weight: 800;
+  height: 26px;
+  justify-content: center;
+  width: 26px;
+}
+
+.stage-main {
+  display: grid;
+  gap: 2px;
+  min-width: 0;
+}
+
+.stage-main strong,
+.artifact-row strong {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.stage-main small,
+.artifact-row small {
+  color: #64748b;
+  font-size: 12px;
+}
+
+.stage-status {
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 800;
+  padding: 5px 8px;
+  text-align: center;
+}
+
+.stage-pending .stage-status {
+  background: #e2e8f0;
+  color: #475569;
+}
+
+.stage-running .stage-status {
+  background: #dbeafe;
+  color: #1d4ed8;
+}
+
+.stage-completed .stage-status {
+  background: #dcfce7;
+  color: #166534;
+}
+
+.stage-failed .stage-status {
+  background: #fee2e2;
+  color: #991b1b;
+}
+
+.artifact-groups {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.group-tab {
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 999px;
+  color: #475569;
+  cursor: pointer;
+  font-size: 12px;
+  padding: 6px 9px;
+}
+
+.group-tab.active {
+  background: #172033;
+  border-color: #172033;
+  color: #fff;
+}
+
+.artifact-row {
+  background: #fff;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  color: #172033;
+  cursor: pointer;
+  display: grid;
+  padding: 9px 10px;
+  text-align: left;
+}
+
+.artifact-row.active {
+  border-color: #2563eb;
+}
+
+.artifact-row span {
+  display: grid;
+  gap: 3px;
+  min-width: 0;
+}
+
+.artifact-list-card .artifact-list {
+  max-height: 340px;
+  overflow: auto;
+}
+
+.artifact-preview-card,
+.result-json-card {
+  min-height: 180px;
+}
+
+.image-preview {
+  display: grid;
+  gap: 8px;
+  margin: 0;
+}
+
+.image-preview img {
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  max-height: 360px;
+  object-fit: contain;
+  width: 100%;
+}
+
+.image-preview figcaption {
+  color: #64748b;
+  font-size: 12px;
+  overflow-wrap: anywhere;
+}
+
+.summary-grid {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.summary-grid > div {
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  display: grid;
+  gap: 4px;
+  min-height: 76px;
+  padding: 10px;
+}
+
+.summary-grid strong {
+  font-size: 20px;
+}
+
+.summary-grid span {
+  color: #64748b;
+  font-size: 12px;
+}
+
+@media (max-width: 1320px) {
+  .workbench-grid {
+    grid-template-columns: 320px minmax(520px, 1fr);
+  }
+
+  .panel-right {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (max-width: 940px) {
+  .service-bar,
+  .workbench-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.field-help {
+  color: #64748b;
+  font-size: 12px;
+  line-height: 1.45;
+}

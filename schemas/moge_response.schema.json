@@ -1,0 +1,48 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://scene-spatial.local/schemas/moge_response.schema.json",
+  "title": "MogeResponse",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "status",
+    "pointsPath",
+    "depthPath",
+    "normalsPath",
+    "validityPath",
+    "cameraPath",
+    "durationMs",
+    "peakGpuMemoryMiB"
+  ],
+  "properties": {
+    "status": {
+      "enum": ["completed", "failed"]
+    },
+    "pointsPath": {
+      "type": "string"
+    },
+    "depthPath": {
+      "type": "string"
+    },
+    "normalsPath": {
+      "type": "string"
+    },
+    "validityPath": {
+      "type": "string"
+    },
+    "cameraPath": {
+      "type": "string"
+    },
+    "durationMs": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "peakGpuMemoryMiB": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "error": {
+      "type": "string"
+    }
+  }
+}

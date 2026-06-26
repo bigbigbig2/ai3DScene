@@ -1,0 +1,17 @@
+gpu:
+  physical_id: 0
+  lock_file: /home/ai3d/tmp/scene-spatial/gpu0.lock
+
+sam3:
+  model_path: /home/ai3d/models/scene-spatial/sam3
+  dtype: bfloat16
+  full_image_first: true
+  tile_mode: 2x2
+  tile_overlap: 0.15
+  process_timeout_seconds: 900
+
+moge2:
+  model_path: /home/ai3d/models/scene-spatial/moge-2-vitl-normal
+  dtype: float16
+  max_image_side: 1280
+  process_timeout_seconds: 600

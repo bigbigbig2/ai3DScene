@@ -1,0 +1,142 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://scene-spatial.local/schemas/scene_semantic_proposal.schema.json",
+  "title": "SceneSemanticProposal",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schemaVersion", "scene", "categoryProposals", "patternHints", "warnings"],
+  "properties": {
+    "schemaVersion": {
+      "const": "1.0"
+    },
+    "scene": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["sceneType", "imageType", "supportedDomain", "semanticConfidence"],
+      "properties": {
+        "sceneType": {
+          "enum": [
+            "wastewater_treatment_plant",
+            "industrial_park",
+            "warehouse_yard",
+            "urban_road",
+            "unknown"
+          ]
+        },
+        "imageType": {
+          "enum": [
+            "oblique_aerial_view",
+            "top_down_aerial_view",
+            "ground_level_photo",
+            "editor_render",
+            "architectural_render",
+            "site_plan",
+            "unknown"
+          ]
+        },
+        "supportedDomain": {
+          "type": "boolean"
+        },
+        "semanticConfidence": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        }
+      }
+    },
+    "categoryProposals": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "category",
+          "objectMode",
+          "semanticConfidence",
+          "promptHints",
+          "expectedScale",
+          "visibleEvidence"
+        ],
+        "properties": {
+          "category": {
+            "enum": [
+              "ground",
+              "building",
+              "rectangular_treatment_pool",
+              "road",
+              "water",
+              "vegetation_region",
+              "street_light"
+            ]
+          },
+          "objectMode": {
+            "enum": ["instance", "region"]
+          },
+          "semanticConfidence": {
+            "type": "number",
+            "minimum": 0,
+            "maximum": 1
+          },
+          "promptHints": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 120
+            }
+          },
+          "expectedScale": {
+            "enum": ["small", "medium", "large", "unknown"]
+          },
+          "visibleEvidence": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 160
+            }
+          }
+        }
+      }
+    },
+    "patternHints": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["category", "patternType", "semanticConfidence"],
+        "properties": {
+          "category": {
+            "enum": ["building", "rectangular_treatment_pool", "street_light"]
+          },
+          "patternType": {
+            "enum": ["grid", "row", "along_path", "cluster", "symmetric", "repeated", "unknown"]
+          },
+          "semanticConfidence": {
+            "type": "number",
+            "minimum": 0,
+            "maximum": 1
+          }
+        }
+      }
+    },
+    "warnings": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["code", "message"],
+        "properties": {
+          "code": {
+            "type": "string",
+            "pattern": "^[A-Z0-9_]+$"
+          },
+          "message": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,63 @@
+categories:
+  ground:
+    display_name: "ground"
+    object_mode: "region"
+    base_prompts:
+      - "ground"
+      - "paved ground"
+      - "open ground area"
+    allow_tile_inference: false
+
+  building:
+    display_name: "building"
+    object_mode: "instance"
+    base_prompts:
+      - "industrial building"
+      - "factory building"
+      - "plant building"
+    allow_tile_inference: true
+
+  rectangular_treatment_pool:
+    display_name: "rectangular treatment pool"
+    object_mode: "instance"
+    base_prompts:
+      - "rectangular wastewater treatment pool"
+      - "rectangular treatment basin"
+      - "long rectangular open-air basin"
+    allow_tile_inference: true
+
+  road:
+    display_name: "road"
+    object_mode: "region"
+    base_prompts:
+      - "road"
+      - "paved internal road"
+      - "facility access road"
+    allow_tile_inference: false
+
+  water:
+    display_name: "water"
+    object_mode: "region"
+    base_prompts:
+      - "water surface"
+      - "river water"
+      - "open water area"
+    allow_tile_inference: false
+
+  vegetation_region:
+    display_name: "vegetation region"
+    object_mode: "region"
+    base_prompts:
+      - "vegetation area"
+      - "grass and trees area"
+      - "green planted area"
+    allow_tile_inference: false
+
+  street_light:
+    display_name: "street light"
+    object_mode: "instance"
+    base_prompts:
+      - "street light"
+      - "road lamp"
+      - "lamp post"
+    allow_tile_inference: true

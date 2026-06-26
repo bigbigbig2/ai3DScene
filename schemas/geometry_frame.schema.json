@@ -1,0 +1,36 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://scene-spatial.local/schemas/geometry_frame.schema.json",
+  "title": "GeometryFrame",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schemaVersion", "pointsPath", "depthPath", "normalsPath", "validityPath", "cameraPath"],
+  "properties": {
+    "schemaVersion": {
+      "const": "1.0"
+    },
+    "pointsPath": {
+      "type": "string",
+      "minLength": 1
+    },
+    "depthPath": {
+      "type": "string",
+      "minLength": 1
+    },
+    "normalsPath": {
+      "type": "string",
+      "minLength": 1
+    },
+    "validityPath": {
+      "type": "string",
+      "minLength": 1
+    },
+    "cameraPath": {
+      "type": "string",
+      "minLength": 1
+    },
+    "pixelMappingPath": {
+      "type": "string"
+    }
+  }
+}

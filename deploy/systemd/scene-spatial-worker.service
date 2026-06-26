@@ -1,0 +1,15 @@
+[Unit]
+Description=Scene Spatial PoC Pipeline Worker
+After=network.target scene-spatial-api.service
+
+[Service]
+Type=simple
+User=ai3d
+WorkingDirectory=/home/ai3d/src/scene-spatial-poc
+EnvironmentFile=/home/ai3d/src/scene-spatial-poc/.env
+ExecStart=/bin/bash /home/ai3d/src/scene-spatial-poc/scripts/start_worker.sh
+Restart=on-failure
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target

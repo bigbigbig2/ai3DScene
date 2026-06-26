@@ -1,0 +1,23 @@
+domain: wastewater_treatment_plant
+display_name: Wastewater treatment plant
+supported_scene_types:
+  - wastewater_treatment_plant
+supported_image_types:
+  - oblique_aerial_view
+  - top_down_aerial_view
+  - ground_level_photo
+  - editor_render
+  - architectural_render
+priority_categories:
+  - building
+  - rectangular_treatment_pool
+  - road
+  - water
+  - vegetation_region
+spatial_rules:
+  allow_grid_detection_for:
+    - rectangular_treatment_pool
+  ground_candidate_sources:
+    - road
+    - ground
+    - vegetation_region

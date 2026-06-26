@@ -1,0 +1,25 @@
+domain: industrial_park
+display_name: Industrial park / office campus
+supported_scene_types:
+  - industrial_park
+  - urban_road
+supported_image_types:
+  - oblique_aerial_view
+  - top_down_aerial_view
+  - ground_level_photo
+  - editor_render
+  - architectural_render
+priority_categories:
+  - building
+  - road
+  - ground
+  - vegetation_region
+  - street_light
+spatial_rules:
+  allow_grid_detection_for:
+    - building
+    - street_light
+  ground_candidate_sources:
+    - road
+    - ground
+    - vegetation_region

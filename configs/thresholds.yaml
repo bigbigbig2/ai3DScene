@@ -1,0 +1,16 @@
+semantic:
+  minimum_scene_confidence: 0.55
+  minimum_category_confidence: 0.45
+
+gpu:
+  sam_segment_minimum_free_memory_mib: 18000
+  moge_estimate_minimum_free_memory_mib: 12000
+
+worker:
+  stage_default_timeout_seconds: 600
+  model_stage_retry_limit: 1
+
+image:
+  semantic_max_side: 1600
+  sam_max_side: 1600
+  moge_max_side: 1280

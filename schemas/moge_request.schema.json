@@ -1,0 +1,32 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://scene-spatial.local/schemas/moge_request.schema.json",
+  "title": "MogeRequest",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schemaVersion", "taskId", "imagePath", "outputDir", "device", "dtype"],
+  "properties": {
+    "schemaVersion": {
+      "const": "1.0"
+    },
+    "taskId": {
+      "type": "string",
+      "minLength": 1
+    },
+    "imagePath": {
+      "type": "string",
+      "minLength": 1
+    },
+    "outputDir": {
+      "type": "string",
+      "minLength": 1
+    },
+    "device": {
+      "type": "string",
+      "minLength": 1
+    },
+    "dtype": {
+      "enum": ["float16", "bfloat16", "float32"]
+    }
+  }
+}
