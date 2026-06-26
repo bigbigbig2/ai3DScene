@@ -1,4 +1,4 @@
-.app-shell {
+﻿.app-shell {
   min-height: 100vh;
   padding: 18px;
 }
@@ -385,4 +385,96 @@
   color: #64748b;
   font-size: 12px;
   line-height: 1.45;
+}
+
+.scene-preview-card.compact {
+  min-height: 0;
+}
+
+.scene-preview-canvas {
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  height: 360px;
+  min-height: 360px;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.scene-preview-canvas canvas {
+  display: block;
+}
+
+.scene-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.scene-legend span {
+  align-items: center;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 999px;
+  color: #475569;
+  display: inline-flex;
+  font-size: 12px;
+  gap: 6px;
+  padding: 5px 8px;
+}
+
+.scene-legend i {
+  border-radius: 999px;
+  display: inline-block;
+  height: 9px;
+  width: 9px;
+}
+
+
+.scene-preview-canvas.large {
+  height: 72vh;
+  min-height: 620px;
+}
+
+.scene-preview-dialog .el-dialog__body {
+  padding-top: 10px;
+}
+
+.scene-dialog-toolbar,
+.scene-preview-actions {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: space-between;
+}
+
+.scene-preview-actions {
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  padding: 12px;
+}
+
+.scene-preview-actions > div {
+  display: grid;
+  gap: 2px;
+}
+
+.scene-preview-actions strong {
+  font-size: 22px;
+}
+
+.scene-preview-actions span {
+  color: #64748b;
+  font-size: 12px;
+}
+
+
+.scene-dialog-controls {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
 }

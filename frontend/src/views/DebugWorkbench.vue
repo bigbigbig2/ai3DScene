@@ -1,10 +1,11 @@
-<script setup lang="ts">
+﻿<script setup lang="ts">
 import { onMounted, watch } from 'vue'
 import ArtifactList from '../components/artifacts/ArtifactList.vue'
 import ArtifactPreview from '../components/artifacts/ArtifactPreview.vue'
 import CorrectionPanel from '../components/corrections/CorrectionPanel.vue'
 import ServiceStatusBar from '../components/connection/ServiceStatusBar.vue'
 import ResultJsonPanel from '../components/result/ResultJsonPanel.vue'
+import ScenePreview3D from '../components/three/ScenePreview3D.vue'
 import ResultSummary from '../components/result/ResultSummary.vue'
 import SemanticProposalEditor from '../components/semantic/SemanticProposalEditor.vue'
 import PipelineTimeline from '../components/stages/PipelineTimeline.vue'
@@ -53,9 +54,12 @@ watch(
         <ArtifactList />
         <ArtifactPreview />
         <ResultSummary />
+        <ScenePreview3D />
         <ResultJsonPanel />
         <CorrectionPanel />
       </aside>
     </main>
   </div>
 </template>
+
+

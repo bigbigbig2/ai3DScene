@@ -1,0 +1,3132 @@
+{
+  "schemaVersion": "1.0",
+  "taskId": "task_a828a62709a8",
+  "source": "pipeline",
+  "objects": [
+    {
+      "id": "building_001",
+      "category": "building",
+      "anchor": {
+        "type": "bottom_center",
+        "position": [
+          46.56822330200235,
+          -33.7528631459161,
+          112.32877229243215
+        ]
+      },
+      "dimensions": {
+        "width": 11.766253187919432,
+        "height": 44.97697617062243,
+        "length": 23.739277307177495,
+        "unit": "relative"
+      },
+      "rotation": {
+        "yaw": -112.65363984990785,
+        "unit": "degree"
+      },
+      "source": {
+        "bbox": [
+          1218,
+          102,
+          1440,
+          500
+        ],
+        "maskPath": "/home/ai3d/outputs/scene-spatial/task_a828a62709a8/detection/raw/masks/building_001.png"
+      },
+      "confidence": {
+        "category": 0.91796875,
+        "detection": 0.91796875,
+        "mask": 0.8,
+        "position": 0.95,
+        "dimensions": 0.95,
+        "rotation": 0.95
+      }
+    },
+    {
+      "id": "building_002",
+      "category": "building",
+      "anchor": {
+        "type": "bottom_center",
+        "position": [
+          -13.771250748675076,
+          -46.71725990071067,
+          154.35093299486647
+        ]
+      },
+      "dimensions": {
+        "width": 8.876646209122155,
+        "height": 35.56167581420503,
+        "length": 75.10789472877308,
+        "unit": "relative"
+      },
+      "rotation": {
+        "yaw": 8.122034178293191,
+        "unit": "degree"
+      },
+      "source": {
+        "bbox": [
+          842,
+          176,
+          892,
+          363
+        ],
+        "maskPath": "/home/ai3d/outputs/scene-spatial/task_a828a62709a8/detection/raw/masks/building_002.png"
+      },
+      "confidence": {
+        "category": 0.8828125,
+        "detection": 0.8828125,
+        "mask": 0.8,
+        "position": 0.95,
+        "dimensions": 0.95,
+        "rotation": 0.95
+      }
+    },
+    {
+      "id": "building_003",
+      "category": "building",
+      "anchor": {
+        "type": "bottom_center",
+        "position": [
+          21.985906854469384,
+          -49.725779961267,
+          164.8169796177617
+        ]
+      },
+      "dimensions": {
+        "width": 10.079598919781548,
+        "height": 35.268966133331126,
+        "length": 79.18842378985943,
+        "unit": "relative"
+      },
+      "rotation": {
+        "yaw": 179.259698006572,
+        "unit": "degree"
+      },
+      "source": {
+        "bbox": [
+          1035,
+          178,
+          1091,
+          386
+        ],
+        "maskPath": "/home/ai3d/outputs/scene-spatial/task_a828a62709a8/detection/raw/masks/building_003.png"
+      },
+      "confidence": {
+        "category": 0.86328125,
+        "detection": 0.86328125,
+        "mask": 0.8,
+        "position": 0.95,
+        "dimensions": 0.95,
+        "rotation": 0.95
+      }
+    },
+    {
+      "id": "building_004",
+      "category": "building",
+      "anchor": {
+        "type": "bottom_center",
+        "position": [
+          -34.36731590397841,
+          -155.30869651035763,
+          513.2941846573794
+        ]
+      },
+      "dimensions": {
+        "width": 20.637047356054925,
+        "height": 38.08216448841435,
+        "length": 630.4062939521089,
+        "unit": "relative"
+      },
+      "rotation": {
+        "yaw": 2.9060612571094873,
+        "unit": "degree"
+      },
+      "source": {
+        "bbox": [
+          881,
+          155,
+          913,
+          229
+        ],
+        "maskPath": "/home/ai3d/outputs/scene-spatial/task_a828a62709a8/detection/raw/masks/building_004.png"
+      },
+      "confidence": {
+        "category": 0.8515625,
+        "detection": 0.8515625,
+        "mask": 0.8,
+        "position": 0.95,
+        "dimensions": 0.95,
+        "rotation": 0.95
+      }
+    },
+    {
+      "id": "building_005",
+      "category": "building",
+      "anchor": {
+        "type": "bottom_center",
+        "position": [
+          -132.55279344305575,
+          -106.66861357843364,
+          350.97491001314893
+        ]
+      },
+      "dimensions": {
+        "width": 33.31491677867982,
+        "height": 50.33464817692563,
+        "length": 57.17844449533197,
+        "unit": "relative"
+      },
+      "rotation": {
+        "yaw": -169.75707715203157,
+        "unit": "degree"
+      },
+      "source": {
+        "bbox": [
+          562,
+          120,
+          667,
+          282
+        ],
+        "maskPath": "/home/ai3d/outputs/scene-spatial/task_a828a62709a8/detection/raw/masks/building_005.png"
+      },
+      "confidence": {
+        "category": 0.84765625,
+        "detection": 0.84765625,
+        "mask": 0.8,
+        "position": 0.95,
+        "dimensions": 0.95,
+        "rotation": 0.95
+      }
+    },
+    {
+      "id": "building_006",
+      "category": "building",
+      "anchor": {
+        "type": "bottom_center",
+        "position": [
+          -4.903998262271108,
+          -60.30627364417721,
+          199.4330050274796
+        ]
+      },
+      "dimensions": {
+        "width": 8.373898864693473,
+        "height": 36.27707493690126,
+        "length": 26.91031559632296,
+        "unit": "relative"
+      },
+      "rotation": {
+        "yaw": 6.205067666705982,
+        "unit": "degree"
+      },
+      "source": {
+        "bbox": [
+          914,
+          175,
+          957,
+          246
+        ],
+        "maskPath": "/home/ai3d/outputs/scene-spatial/task_a828a62709a8/detection/raw/masks/building_006.png"
+      },
+      "confidence": {
+        "category": 0.8359375,
+        "detection": 0.8359375,
+        "mask": 0.8,
+        "position": 0.95,
+        "dimensions": 0.95,
+        "rotation": 0.95
+      }
+    },
+    {
+      "id": "building_007",
+      "category": "building",
+      "anchor": {
+        "type": "bottom_center",
+        "position": [
+          7.391790789877446,
+          -55.99130685182865,
+          185.3348865328332
+        ]
+      },
+      "dimensions": {
+        "width": 11.21060293559286,
+        "height": 38.30056377617456,
+        "length": 15.503679229002813,
+        "unit": "relative"
+      },
+      "rotation": {
+        "yaw": -163.01036559344143,
+        "unit": "degree"
+      },
+      "source": {
+        "bbox": [
+          957,
+          164,
+          1021,
+          246
+        ],
+        "maskPath": "/home/ai3d/outputs/scene-spatial/task_a828a62709a8/detection/raw/masks/building_007.png"
+      },
+      "confidence": {
+        "category": 0.8359375,
+        "detection": 0.8359375,
+        "mask": 0.8,
+        "position": 0.95,
+        "dimensions": 0.95,
+        "rotation": 0.95
+      }
+    },
+    {
+      "id": "building_008",
+      "category": "building",
+      "anchor": {
+        "type": "bottom_center",
+        "position": [
+          -241.5403158005582,
+          -71.14568668004159,
+          231.89433795105754
+        ]
+      },
+      "dimensions": {
+        "width": 7.163879188218402,
+        "height": 41.71140115260886,
+        "length": 16.769878945813105,
+        "unit": "relative"
+      },
+      "rotation": {
+        "yaw": -164.42552724228065,
+        "unit": "degree"
+      },
+      "source": {
+        "bbox": [
+          0,
+          130,
+          50,
+          327
+        ],
+        "maskPath": "/home/ai3d/outputs/scene-spatial/task_a828a62709a8/detection/raw/masks/building_008.png"
+      },
+      "confidence": {
+        "category": 0.8203125,
+        "detection": 0.8203125,
+        "mask": 0.8,
+        "position": 0.95,
+        "dimensions": 0.95,
+        "rotation": 0.95
+      }
+    },
+    {
+      "id": "building_009",
+      "category": "building",
+      "anchor": {
+        "type": "bottom_center",
+        "position": [
+          -30.645211201604248,
+          -33.76337360788907,
+          111.25502162099828
+        ]
+      },
+      "dimensions": {
+        "width": 17.48953044104358,
+        "height": 34.69763665706515,
+        "length": 26.699934447588987,
+        "unit": "relative"
+      },
+      "rotation": {
+        "yaw": -168.20031513850503,
+        "unit": "degree"
+      },
+      "source": {
+        "bbox": [
+          623,
+          194,
+          792,
+          451
+        ],
+        "maskPath": "/home/ai3d/outputs/scene-spatial/task_a828a62709a8/detection/raw/masks/building_009.png"
+      },
+      "confidence": {
+        "category": 0.81640625,
+        "detection": 0.81640625,
+        "mask": 0.8,
+        "position": 0.95,
+        "dimensions": 0.95,
+        "rotation": 0.95
+      }
+    },
+    {
+      "id": "building_010",
+      "category": "building",
+      "anchor": {
+        "type": "bottom_center",
+        "position": [
+          2.5013823608207373,
+          -34.67782406362191,
+          114.75605106755285
+        ]
+      },
+      "dimensions": {
+        "width": 3.2443600223629545,
+        "height": 28.828846807153987,
+        "length": 23.39010854763334,
+        "unit": "relative"
+      },
+      "rotation": {
+        "yaw": -83.64226551176444,
+        "unit": "degree"
+      },
+      "source": {
+        "bbox": [
+          876,
+          245,
+          1071,
+          400
+        ],
+        "maskPath": "/home/ai3d/outputs/scene-spatial/task_a828a62709a8/detection/raw/masks/building_010.png"
+      },
+      "confidence": {
+        "category": 0.8125,
+        "detection": 0.8125,
+        "mask": 0.8,
+        "position": 0.95,
+        "dimensions": 0.95,
+        "rotation": 0.95
+      }
+    },
+    {
+      "id": "building_011",
+      "category": "building",
+      "anchor": {
+        "type": "bottom_center",
+        "position": [
+          39.88991967256797,
+          -51.93680612034054,
+          172.388470630675
+        ]
+      },
+      "dimensions": {
+        "width": 8.410441862360344,
+        "height": 34.26478653969539,
+        "length": 29.876272596365396,
+        "unit": "relative"
+      },
+      "rotation": {
+        "yaw": -168.07357847044761,
+        "unit": "degree"
+      },
+      "source": {
+        "bbox": [
+          1124,
+          179,
+          1214,
+          395
+        ],
+        "maskPath": "/home/ai3d/outputs/scene-spatial/task_a828a62709a8/detection/raw/masks/building_011.png"
+      },
+      "confidence": {
+        "category": 0.77734375,
+        "detection": 0.77734375,
+        "mask": 0.8,
+        "position": 0.95,
+        "dimensions": 0.95,
+        "rotation": 0.95
+      }
+    },
+    {
+      "id": "building_012",
+      "category": "building",
+      "anchor": {
+        "type": "bottom_center",
+        "position": [
+          39.25549063564133,
+          -60.80131884460289,
+          201.70467810392245
+        ]
+      },
+      "dimensions": {
+        "width": 6.6750166240302065,
+        "height": 36.38531838506155,
+        "length": 51.602330781731894,
+        "unit": "relative"
+      },
+      "rotation": {
+        "yaw": -7.672342648145744,
+        "unit": "degree"
+      },
+      "source": {
+        "bbox": [
+          1111,
+          174,
+          1167,
+          351
+        ],
+        "maskPath": "/home/ai3d/outputs/scene-spatial/task_a828a62709a8/detection/raw/masks/building_012.png"
+      },
+      "confidence": {
+        "category": 0.7734375,
+        "detection": 0.7734375,
+        "mask": 0.8,
+        "position": 0.95,
+        "dimensions": 0.95,
+        "rotation": 0.95
+      }
+    },
+    {
+      "id": "building_013",
+      "category": "building",
+      "anchor": {
+        "type": "bottom_center",
+        "position": [
+          86.85461765980982,
+          -214.6678028467165,
+          711.4045365288747
+        ]
+      },
+      "dimensions": {
+        "width": 21.990030694196705,
+        "height": 37.59248239712936,
+        "length": 987.9471504359536,
+        "unit": "relative"
+      },
+      "rotation": {
+        "yaw": 174.53430556522,
+        "unit": "degree"
+      },
+      "source": {
+        "bbox": [
+          1053,
+          158,
+          1087,
+          179
+        ],
+        "maskPath": "/home/ai3d/outputs/scene-spatial/task_a828a62709a8/detection/raw/masks/building_013.png"
+      },
+      "confidence": {
+        "category": 0.76171875,
+        "detection": 0.76171875,
+        "mask": 0.8,
+        "position": 0.8994252873563219,
+        "dimensions": 0.8994252873563219,
+        "rotation": 0.8994252873563219
+      }
+    },
+    {
+      "id": "building_014",
+      "category": "building",
+      "anchor": {
+        "type": "bottom_center",
+        "position": [
+          -95.90146325552683,
+          -127.40699599865513,
+          420.1071939557126
+        ]
+      },
+      "dimensions": {
+        "width": 9.424277904908578,
+        "height": 34.50479678716784,
+        "length": 373.296787604945,
+        "unit": "relative"
+      },
+      "rotation": {
+        "yaw": -167.28343467980508,
+        "unit": "degree"
+      },
+      "source": {
+        "bbox": [
+          737,
+          168,
+          760,
+          187
+        ],
+        "maskPath": "/home/ai3d/outputs/scene-spatial/task_a828a62709a8/detection/raw/masks/building_014.png"
+      },
+      "confidence": {
+        "category": 0.70703125,
+        "detection": 0.70703125,
+        "mask": 0.8,
+        "position": 0.95,
+        "dimensions": 0.95,
+        "rotation": 0.95
+      }
+    },
+    {
+      "id": "building_015",
+      "category": "building",
+      "anchor": {
+        "type": "bottom_center",
+        "position": [
+          -54.70019731621966,
+          -122.60864885734955,
+          404.82495492961516
+        ]
+      },
+      "dimensions": {
+        "width": 10.96343429384451,
+        "height": 22.946618613045544,
+        "length": 232.22185560865898,
+        "unit": "relative"
+      },
+      "rotation": {
+        "yaw": -171.0288814802841,
+        "unit": "degree"
+      },
+      "source": {
+        "bbox": [
+          818,
+          185,
+          841,
+          256
+        ],
+        "maskPath": "/home/ai3d/outputs/scene-spatial/task_a828a62709a8/detection/raw/masks/building_015.png"
+      },
+      "confidence": {
+        "category": 0.69140625,
+        "detection": 0.69140625,
+        "mask": 0.8,
+        "position": 0.95,
+        "dimensions": 0.95,
+        "rotation": 0.95
+      }
+    },
+    {
+      "id": "building_016",
+      "category": "building",
+      "anchor": {
+        "type": "bottom_center",
+        "position": [
+          -41.03257657019736,
+          -62.80891768425562,
+          207.19349421766591
+        ]
+      },
+      "dimensions": {
+        "width": 11.65563435813264,
+        "height": 35.75364777225964,
+        "length": 178.2009475141944,
+        "unit": "relative"
+      },
+      "rotation": {
+        "yaw": 8.956498705616095,
+        "unit": "degree"
+      },
+      "source": {
+        "bbox": [
+          731,
+          176,
+          807,
+          391
+        ],
+        "maskPath": "/home/ai3d/outputs/scene-spatial/task_a828a62709a8/detection/raw/masks/building_016.png"
+      },
+      "confidence": {
+        "category": 0.6796875,
+        "detection": 0.6796875,
+        "mask": 0.8,
+        "position": 0.95,
+        "dimensions": 0.95,
+        "rotation": 0.95
+      }
+    },
+    {
+      "id": "building_017",
+      "category": "building",
+      "anchor": {
+        "type": "bottom_center",
+        "position": [
+          -515.0960542109257,
+          -226.9489180215493,
+          743.3905995398644
+        ]
+      },
+      "dimensions": {
+        "width": 19.226534624600333,
+        "height": 50.34392569193572,
+        "length": 34.47162463392749,
+        "unit": "relative"
+      },
+      "rotation": {
+        "yaw": 7.784519048858836,
+        "unit": "degree"
+      },
+      "source": {
+        "bbox": [
+          301,
+          137,
+          336,
+          173
+        ],
+        "maskPath": "/home/ai3d/outputs/scene-spatial/task_a828a62709a8/detection/raw/masks/building_017.png"
+      },
+      "confidence": {
+        "category": 0.6484375,
+        "detection": 0.6484375,
+        "mask": 0.8,
+        "position": 0.9211045364891519,
+        "dimensions": 0.9211045364891519,
+        "rotation": 0.9211045364891519
+      }
+    },
+    {
+      "id": "building_018",
+      "category": "building",
+      "anchor": {
+        "type": "bottom_center",
+        "position": [
+          27.63253384820462,
+          -102.9720770921113,
+          341.0458525529293
+        ]
+      },
+      "dimensions": {
+        "width": 4.304966078004579,
+        "height": 35.533673052982216,
+        "length": 327.5252072744107,
+        "unit": "relative"
+      },
+      "rotation": {
+        "yaw": -4.315652851682086,
+        "unit": "degree"
+      },
+      "source": {
+        "bbox": [
+          1020,
+          175,
+          1042,
+          243
+        ],
+        "maskPath": "/home/ai3d/outputs/scene-spatial/task_a828a62709a8/detection/raw/masks/building_018.png"
+      },
+      "confidence": {
+        "category": 0.640625,
+        "detection": 0.640625,
+        "mask": 0.8,
+        "position": 0.95,
+        "dimensions": 0.95,
+        "rotation": 0.95
+      }
+    },
+    {
+      "id": "building_019",
+      "category": "building",
+      "anchor": {
+        "type": "bottom_center",
+        "position": [
+          393.922684607032,
+          -171.3463143375105,
+          572.4981328584702
+        ]
+      },
+      "dimensions": {
+        "width": 40.53142979522089,
+        "height": 42.099075180657756,
+        "length": 75.63898778405417,
+        "unit": "relative"
+      },
+      "rotation": {
+        "yaw": 154.11256702107724,
+        "unit": "degree"
+      },
+      "source": {
+        "bbox": [
+          1541,
+          147,
+          1629,
+          225
+        ],
+        "maskPath": "/home/ai3d/outputs/scene-spatial/task_a828a62709a8/detection/raw/masks/building_019.png"
+      },
+      "confidence": {
+        "category": 0.640625,
+        "detection": 0.640625,
+        "mask": 0.8,
+        "position": 0.95,
+        "dimensions": 0.95,
+        "rotation": 0.95
+      }
+    },
+    {
+      "id": "building_020",
+      "category": "building",
+      "anchor": {
+        "type": "bottom_center",
+        "position": [
+          -341.4776066329446,
+          -111.76055144604618,
+          364.820460096939
+        ]
+      },
+      "dimensions": {
+        "width": 39.337433186893705,
+        "height": 37.61499566243828,
+        "length": 120.66473125823836,
+        "unit": "relative"
+      },
+      "rotation": {
+        "yaw": -136.95244909031555,
+        "unit": "degree"
+      },
+      "source": {
+        "bbox": [
+          37,
+          152,
+          200,
+          283
+        ],
+        "maskPath": "/home/ai3d/outputs/scene-spatial/task_a828a62709a8/detection/raw/masks/building_020.png"
+      },
+      "confidence": {
+        "category": 0.63671875,
+        "detection": 0.63671875,
+        "mask": 0.8,
+        "position": 0.95,
+        "dimensions": 0.95,
+        "rotation": 0.95
+      }
+    },
+    {
+      "id": "building_021",
+      "category": "building",
+      "anchor": {
+        "type": "bottom_center",
+        "position": [
+          63.77103115352082,
+          -118.44043018203168,
+          392.7366206533377
+        ]
+      },
+      "dimensions": {
+        "width": 12.104956739153057,
+        "height": 33.03368622087883,
+        "length": 402.2174186230924,
+        "unit": "relative"
+      },
+      "rotation": {
+        "yaw": 171.35312505621266,
+        "unit": "degree"
+      },
+      "source": {
+        "bbox": [
+          1087,
+          174,
+          1118,
+          223
+        ],
+        "maskPath": "/home/ai3d/outputs/scene-spatial/task_a828a62709a8/detection/raw/masks/building_021.png"
+      },
+      "confidence": {
+        "category": 0.609375,
+        "detection": 0.609375,
+        "mask": 0.8,
+        "position": 0.95,
+        "dimensions": 0.95,
+        "rotation": 0.95
+      }
+    },
+    {
+      "id": "building_022",
+      "category": "building",
+      "anchor": {
+        "type": "bottom_center",
+        "position": [
+          226.57941890407204,
+          -83.26129493200087,
+          278.6954303270248
+        ]
+      },
+      "dimensions": {
+        "width": 25.592616668616287,
+        "height": 35.17401659214744,
+        "length": 106.62612038222767,
+        "unit": "relative"
+      },
+      "rotation": {
+        "yaw": 126.68009276170775,
+        "unit": "degree"
+      },
+      "source": {
+        "bbox": [
+          1611,
+          172,
+          1764,
+          303
+        ],
+        "maskPath": "/home/ai3d/outputs/scene-spatial/task_a828a62709a8/detection/raw/masks/building_022.png"
+      },
+      "confidence": {
+        "category": 0.609375,
+        "detection": 0.609375,
+        "mask": 0.8,
+        "position": 0.95,
+        "dimensions": 0.95,
+        "rotation": 0.95
+      }
+    },
+    {
+      "id": "building_023",
+      "category": "building",
+      "anchor": {
+        "type": "bottom_center",
+        "position": [
+          196.89361877961434,
+          -66.05821115018554,
+          221.3585167484328
+        ]
+      },
+      "dimensions": {
+        "width": 28.119757432334723,
+        "height": 19.53003190560012,
+        "length": 61.48021613277939,
+        "unit": "relative"
+      },
+      "rotation": {
+        "yaw": 136.6006305833013,
+        "unit": "degree"
+      },
+      "source": {
+        "bbox": [
+          1654,
+          236,
+          1827,
+          355
+        ],
+        "maskPath": "/home/ai3d/outputs/scene-spatial/task_a828a62709a8/detection/raw/masks/building_023.png"
+      },
+      "confidence": {
+        "category": 0.60546875,
+        "detection": 0.60546875,
+        "mask": 0.8,
+        "position": 0.95,
+        "dimensions": 0.95,
+        "rotation": 0.95
+      }
+    },
+    {
+      "id": "building_024",
+      "category": "building",
+      "anchor": {
+        "type": "bottom_center",
+        "position": [
+          -59.607475080552256,
+          -112.33300397416716,
+          370.76092230650977
+        ]
+      },
+      "dimensions": {
+        "width": 8.295094724884503,
+        "height": 27.37731477835342,
+        "length": 408.48639418530126,
+        "unit": "relative"
+      },
+      "rotation": {
+        "yaw": 8.34702595757504,
+        "unit": "degree"
+      },
+      "source": {
+        "bbox": [
+          798,
+          175,
+          820,
+          246
+        ],
+        "maskPath": "/home/ai3d/outputs/scene-spatial/task_a828a62709a8/detection/raw/masks/building_024.png"
+      },
+      "confidence": {
+        "category": 0.59765625,
+        "detection": 0.59765625,
+        "mask": 0.8,
+        "position": 0.95,
+        "dimensions": 0.95,
+        "rotation": 0.95
+      }
+    },
+    {
+      "id": "building_025",
+      "category": "building",
+      "anchor": {
+        "type": "bottom_center",
+        "position": [
+          -125.6239110989271,
+          -111.7383095571693,
+          367.84580160249925
+        ]
+      },
+      "dimensions": {
+        "width": 15.343656127062161,
+        "height": 52.24409723142471,
+        "length": 33.122960703411906,
+        "unit": "relative"
+      },
+      "rotation": {
+        "yaw": -35.76515577482678,
+        "unit": "degree"
+      },
+      "source": {
+        "bbox": [
+          590,
+          119,
+          668,
+          186
+        ],
+        "maskPath": "/home/ai3d/outputs/scene-spatial/task_a828a62709a8/detection/raw/masks/building_025.png"
+      },
+      "confidence": {
+        "category": 0.58203125,
+        "detection": 0.58203125,
+        "mask": 0.8,
+        "position": 0.95,
+        "dimensions": 0.95,
+        "rotation": 0.95
+      }
+    },
+    {
+      "id": "building_026",
+      "category": "building",
+      "anchor": {
+        "type": "bottom_center",
+        "position": [
+          356.79775969050314,
+          -140.56814531220522,
+          470.1457281275692
+        ]
+      },
+      "dimensions": {
+        "width": 16.513210527306864,
+        "height": 44.825153312274885,
+        "length": 243.48574281188144,
+        "unit": "relative"
+      },
+      "rotation": {
+        "yaw": 146.484939346149,
+        "unit": "degree"
+      },
+      "source": {
+        "bbox": [
+          1628,
+          149,
+          1672,
+          175
+        ],
+        "maskPath": "/home/ai3d/outputs/scene-spatial/task_a828a62709a8/detection/raw/masks/building_026.png"
+      },
+      "confidence": {
+        "category": 0.57421875,
+        "detection": 0.57421875,
+        "mask": 0.8,
+        "position": 0.9054680259499537,
+        "dimensions": 0.9054680259499537,
+        "rotation": 0.9054680259499537
+      }
+    },
+    {
+      "id": "building_027",
+      "category": "building",
+      "anchor": {
+        "type": "bottom_center",
+        "position": [
+          335.3322866977781,
+          -115.4199419928399,
+          386.64302367559895
+        ]
+      },
+      "dimensions": {
+        "width": 19.375919147400445,
+        "height": 56.80026731293179,
+        "length": 118.70501118176509,
+        "unit": "relative"
+      },
+      "rotation": {
+        "yaw": 143.65933899819126,
+        "unit": "degree"
+      },
+      "source": {
+        "bbox": [
+          1721,
+          119,
+          1783,
+          186
+        ],
+        "maskPath": "/home/ai3d/outputs/scene-spatial/task_a828a62709a8/detection/raw/masks/building_027.png"
+      },
+      "confidence": {
+        "category": 0.5703125,
+        "detection": 0.5703125,
+        "mask": 0.8,
+        "position": 0.95,
+        "dimensions": 0.95,
+        "rotation": 0.95
+      }
+    },
+    {
+      "id": "building_028",
+      "category": "building",
+      "anchor": {
+        "type": "bottom_center",
+        "position": [
+          303.81114627209774,
+          -114.14860475370844,
+          381.98468800532675
+        ]
+      },
+      "dimensions": {
+        "width": 16.7965289613427,
+        "height": 49.57416554257811,
+        "length": 157.36844665994045,
+        "unit": "relative"
+      },
+      "rotation": {
+        "yaw": 141.2227671126288,
+        "unit": "degree"
+      },
+      "source": {
+        "bbox": [
+          1671,
+          137,
+          1722,
+          174
+        ],
+        "maskPath": "/home/ai3d/outputs/scene-spatial/task_a828a62709a8/detection/raw/masks/building_028.png"
+      },
+      "confidence": {
+        "category": 0.5625,
+        "detection": 0.5625,
+        "mask": 0.8,
+        "position": 0.939117199391172,
+        "dimensions": 0.939117199391172,
+        "rotation": 0.939117199391172
+      }
+    },
+    {
+      "id": "building_029",
+      "category": "building",
+      "anchor": {
+        "type": "bottom_center",
+        "position": [
+          -622.0741981327864,
+          -225.88148403278552,
+          738.3235057802864
+        ]
+      },
+      "dimensions": {
+        "width": 19.151780494570914,
+        "height": 39.97369470107604,
+        "length": 48.314328744521276,
+        "unit": "relative"
+      },
+      "rotation": {
+        "yaw": 20.15129872630455,
+        "unit": "degree"
+      },
+      "source": {
+        "bbox": [
+          169,
+          150,
+          206,
+          178
+        ],
+        "maskPath": "/home/ai3d/outputs/scene-spatial/task_a828a62709a8/detection/raw/masks/building_029.png"
+      },
+      "confidence": {
+        "category": 0.546875,
+        "detection": 0.546875,
+        "mask": 0.8,
+        "position": 0.9235955056179775,
+        "dimensions": 0.9235955056179775,
+        "rotation": 0.9235955056179775
+      }
+    },
+    {
+      "id": "building_030",
+      "category": "building",
+      "anchor": {
+        "type": "bottom_center",
+        "position": [
+          341.24153163096753,
+          -159.83902311509416,
+          533.673735079314
+        ]
+      },
+      "dimensions": {
+        "width": 14.734234691282893,
+        "height": 12.450602515463736,
+        "length": 183.1218178453488,
+        "unit": "relative"
+      },
+      "rotation": {
+        "yaw": 150.43911248402318,
+        "unit": "degree"
+      },
+      "source": {
+        "bbox": [
+          1517,
+          204,
+          1551,
+          251
+        ],
+        "maskPath": "/home/ai3d/outputs/scene-spatial/task_a828a62709a8/detection/raw/masks/building_030.png"
+      },
+      "confidence": {
+        "category": 0.54296875,
+        "detection": 0.54296875,
+        "mask": 0.8,
+        "position": 0.95,
+        "dimensions": 0.95,
+        "rotation": 0.95
+      }
+    },
+    {
+      "id": "building_031",
+      "category": "building",
+      "anchor": {
+        "type": "bottom_center",
+        "position": [
+          322.7977446184211,
+          -170.25468029005722,
+          567.8657106805625
+        ]
+      },
+      "dimensions": {
+        "width": 39.54001229040613,
+        "height": 30.640311653408233,
+        "length": 186.18672975422885,
+        "unit": "relative"
+      },
+      "rotation": {
+        "yaw": -31.99199371637301,
+        "unit": "degree"
+      },
+      "source": {
+        "bbox": [
+          1437,
+          171,
+          1516,
+          221
+        ],
+        "maskPath": "/home/ai3d/outputs/scene-spatial/task_a828a62709a8/detection/raw/masks/building_031.png"
+      },
+      "confidence": {
+        "category": 0.5390625,
+        "detection": 0.5390625,
+        "mask": 0.8,
+        "position": 0.95,
+        "dimensions": 0.95,
+        "rotation": 0.95
+      }
+    },
+    {
+      "id": "building_032",
+      "category": "building",
+      "anchor": {
+        "type": "bottom_center",
+        "position": [
+          -578.4373931151708,
+          -234.84059868800318,
+          768.5882561685706
+        ]
+      },
+      "dimensions": {
+        "width": 18.55336606761003,
+        "height": 41.777033300106304,
+        "length": 29.018263781782252,
+        "unit": "relative"
+      },
+      "rotation": {
+        "yaw": 33.2793829689325,
+        "unit": "degree"
+      },
+      "source": {
+        "bbox": [
+          249,
+          150,
+          281,
+          171
+        ],
+        "maskPath": "/home/ai3d/outputs/scene-spatial/task_a828a62709a8/detection/raw/masks/building_032.png"
+      },
+      "confidence": {
+        "category": 0.5,
+        "detection": 0.5,
+        "mask": 0.8,
+        "position": 0.95,
+        "dimensions": 0.95,
+        "rotation": 0.95
+      }
+    },
+    {
+      "id": "building_033",
+      "category": "building",
+      "anchor": {
+        "type": "bottom_center",
+        "position": [
+          422.9686569012844,
+          -127.79378390456296,
+          428.83595598294943
+        ]
+      },
+      "dimensions": {
+        "width": 17.96798266568598,
+        "height": 46.327450746439766,
+        "length": 34.20107436203193,
+        "unit": "relative"
+      },
+      "rotation": {
+        "yaw": -65.8195044370811,
+        "unit": "degree"
+      },
+      "source": {
+        "bbox": [
+          1837,
+          145,
+          1887,
+          176
+        ],
+        "maskPath": "/home/ai3d/outputs/scene-spatial/task_a828a62709a8/detection/raw/masks/building_033.png"
+      },
+      "confidence": {
+        "category": 0.4921875,
+        "detection": 0.4921875,
+        "mask": 0.8,
+        "position": 0.95,
+        "dimensions": 0.95,
+        "rotation": 0.95
+      }
+    },
+    {
+      "id": "building_034",
+      "category": "building",
+      "anchor": {
+        "type": "bottom_center",
+        "position": [
+          -11.851267601565624,
+          -32.478139230176005,
+          107.27306452362737
+        ]
+      },
+      "dimensions": {
+        "width": 29.98798551427373,
+        "height": 32.78127175050303,
+        "length": 51.822618747436145,
+        "unit": "relative"
+      },
+      "rotation": {
+        "yaw": -70.9341574224922,
+        "unit": "degree"
+      },
+      "source": {
+        "bbox": [
+          625,
+          199,
+          1082,
+          536
+        ],
+        "maskPath": "/home/ai3d/outputs/scene-spatial/task_a828a62709a8/detection/raw/masks/building_034.png"
+      },
+      "confidence": {
+        "category": 0.490234375,
+        "detection": 0.490234375,
+        "mask": 0.8,
+        "position": 0.95,
+        "dimensions": 0.95,
+        "rotation": 0.95
+      }
+    },
+    {
+      "id": "building_035",
+      "category": "building",
+      "anchor": {
+        "type": "bottom_center",
+        "position": [
+          136.51416135647202,
+          -140.5167138499044,
+          466.813064380036
+        ]
+      },
+      "dimensions": {
+        "width": 7.32816176935642,
+        "height": 34.939652573328445,
+        "length": 634.1855890091483,
+        "unit": "relative"
+      },
+      "rotation": {
+        "yaw": 164.61328991008597,
+        "unit": "degree"
+      },
+      "source": {
+        "bbox": [
+          1215,
+          165,
+          1232,
+          232
+        ],
+        "maskPath": "/home/ai3d/outputs/scene-spatial/task_a828a62709a8/detection/raw/masks/building_035.png"
+      },
+      "confidence": {
+        "category": 0.48828125,
+        "detection": 0.48828125,
+        "mask": 0.8,
+        "position": 0.95,
+        "dimensions": 0.95,
+        "rotation": 0.95
+      }
+    },
+    {
+      "id": "building_036",
+      "category": "building",
+      "anchor": {
+        "type": "bottom_center",
+        "position": [
+          190.67020734068575,
+          -52.844154441607046,
+          177.5548228802607
+        ]
+      },
+      "dimensions": {
+        "width": 3.589231428354587,
+        "height": 13.005910782495667,
+        "length": 21.367533019990645,
+        "unit": "relative"
+      },
+      "rotation": {
+        "yaw": 146.92719015042113,
+        "unit": "degree"
+      },
+      "source": {
+        "bbox": [
+          1877,
+          283,
+          1914,
+          385
+        ],
+        "maskPath": "/home/ai3d/outputs/scene-spatial/task_a828a62709a8/detection/raw/masks/building_036.png"
+      },
+      "confidence": {
+        "category": 0.478515625,
+        "detection": 0.478515625,
+        "mask": 0.8,
+        "position": 0.95,
+        "dimensions": 0.95,
+        "rotation": 0.95
+      }
+    },
+    {
+      "id": "building_037",
+      "category": "building",
+      "anchor": {
+        "type": "bottom_center",
+        "position": [
+          305.6506778895974,
+          -117.63137517208595,
+          393.5326942625973
+        ]
+      },
+      "dimensions": {
+        "width": 155.86941005923214,
+        "height": 43.32601968626097,
+        "length": 521.9938948675522,
+        "unit": "relative"
+      },
+      "rotation": {
+        "yaw": 153.32970255872038,
+        "unit": "degree"
+      },
+      "source": {
+        "bbox": [
+          1432,
+          118,
+          1914,
+          385
+        ],
+        "maskPath": "/home/ai3d/outputs/scene-spatial/task_a828a62709a8/detection/raw/masks/building_037.png"
+      },
+      "confidence": {
+        "category": 0.478515625,
+        "detection": 0.478515625,
+        "mask": 0.8,
+        "position": 0.95,
+        "dimensions": 0.95,
+        "rotation": 0.95
+      }
+    },
+    {
+      "id": "building_038",
+      "category": "building",
+      "anchor": {
+        "type": "bottom_center",
+        "position": [
+          206.7468704604404,
+          -60.05904815540234,
+          201.6537242897481
+        ]
+      },
+      "dimensions": {
+        "width": 14.811911322875758,
+        "height": 25.287992426587103,
+        "length": 58.75194745910136,
+        "unit": "relative"
+      },
+      "rotation": {
+        "yaw": 148.61440925843837,
+        "unit": "degree"
+      },
+      "source": {
+        "bbox": [
+          1795,
+          214,
+          1913,
+          350
+        ],
+        "maskPath": "/home/ai3d/outputs/scene-spatial/task_a828a62709a8/detection/raw/masks/building_038.png"
+      },
+      "confidence": {
+        "category": 0.4765625,
+        "detection": 0.4765625,
+        "mask": 0.8,
+        "position": 0.95,
+        "dimensions": 0.95,
+        "rotation": 0.95
+      }
+    },
+    {
+      "id": "building_039",
+      "category": "building",
+      "anchor": {
+        "type": "bottom_center",
+        "position": [
+          -61.87208443097926,
+          -102.05125773649486,
+          336.71464505302333
+        ]
+      },
+      "dimensions": {
+        "width": 13.105418170534001,
+        "height": 36.185440560989534,
+        "length": 381.13488030426555,
+        "unit": "relative"
+      },
+      "rotation": {
+        "yaw": 8.593854019416417,
+        "unit": "degree"
+      },
+      "source": {
+        "bbox": [
+          730,
+          176,
+          805,
+          268
+        ],
+        "maskPath": "/home/ai3d/outputs/scene-spatial/task_a828a62709a8/detection/raw/masks/building_039.png"
+      },
+      "confidence": {
+        "category": 0.46484375,
+        "detection": 0.46484375,
+        "mask": 0.8,
+        "position": 0.95,
+        "dimensions": 0.95,
+        "rotation": 0.95
+      }
+    },
+    {
+      "id": "building_040",
+      "category": "building",
+      "anchor": {
+        "type": "bottom_center",
+        "position": [
+          395.54734004117034,
+          -192.35127157532767,
+          642.0094282778538
+        ]
+      },
+      "dimensions": {
+        "width": 34.13082970857467,
+        "height": 35.21422682834491,
+        "length": 52.38751324761449,
+        "unit": "relative"
+      },
+      "rotation": {
+        "yaw": 144.2654056028239,
+        "unit": "degree"
+      },
+      "source": {
+        "bbox": [
+          1491,
+          163,
+          1546,
+          217
+        ],
+        "maskPath": "/home/ai3d/outputs/scene-spatial/task_a828a62709a8/detection/raw/masks/building_040.png"
+      },
+      "confidence": {
+        "category": 0.46484375,
+        "detection": 0.46484375,
+        "mask": 0.8,
+        "position": 0.95,
+        "dimensions": 0.95,
+        "rotation": 0.95
+      }
+    },
+    {
+      "id": "building_041",
+      "category": "building",
+      "anchor": {
+        "type": "bottom_center",
+        "position": [
+          210.73312025656384,
+          -116.542888341252,
+          388.56910292683136
+        ]
+      },
+      "dimensions": {
+        "width": 24.787806348583352,
+        "height": 40.27222691648439,
+        "length": 664.4485416195241,
+        "unit": "relative"
+      },
+      "rotation": {
+        "yaw": -27.929093466412247,
+        "unit": "degree"
+      },
+      "source": {
+        "bbox": [
+          1413,
+          156,
+          1482,
+          197
+        ],
+        "maskPath": "/home/ai3d/outputs/scene-spatial/task_a828a62709a8/detection/raw/masks/building_041.png"
+      },
+      "confidence": {
+        "category": 0.4609375,
+        "detection": 0.4609375,
+        "mask": 0.8,
+        "position": 0.9485011529592621,
+        "dimensions": 0.9485011529592621,
+        "rotation": 0.9485011529592621
+      }
+    },
+    {
+      "id": "building_042",
+      "category": "building",
+      "anchor": {
+        "type": "bottom_center",
+        "position": [
+          311.8473316157799,
+          -112.88726764590193,
+          377.92734249373393
+        ]
+      },
+      "dimensions": {
+        "width": 33.9945938236741,
+        "height": 55.92176791257626,
+        "length": 160.36523817917612,
+        "unit": "relative"
+      },
+      "rotation": {
+        "yaw": 138.8496421099876,
+        "unit": "degree"
+      },
+      "source": {
+        "bbox": [
+          1678,
+          120,
+          1783,
+          182
+        ],
+        "maskPath": "/home/ai3d/outputs/scene-spatial/task_a828a62709a8/detection/raw/masks/building_042.png"
+      },
+      "confidence": {
+        "category": 0.4609375,
+        "detection": 0.4609375,
+        "mask": 0.8,
+        "position": 0.95,
+        "dimensions": 0.95,
+        "rotation": 0.95
+      }
+    },
+    {
+      "id": "building_043",
+      "category": "building",
+      "anchor": {
+        "type": "bottom_center",
+        "position": [
+          246.3651015133781,
+          -137.19987631375872,
+          457.41748582601036
+        ]
+      },
+      "dimensions": {
+        "width": 26.577794952919003,
+        "height": 40.4461574258484,
+        "length": 514.0669328689467,
+        "unit": "relative"
+      },
+      "rotation": {
+        "yaw": -28.547020983494313,
+        "unit": "degree"
+      },
+      "source": {
+        "bbox": [
+          1434,
+          156,
+          1482,
+          173
+        ],
+        "maskPath": "/home/ai3d/outputs/scene-spatial/task_a828a62709a8/detection/raw/masks/building_043.png"
+      },
+      "confidence": {
+        "category": 0.4453125,
+        "detection": 0.4453125,
+        "mask": 0.8,
+        "position": 0.882525697503671,
+        "dimensions": 0.882525697503671,
+        "rotation": 0.882525697503671
+      }
+    },
+    {
+      "id": "building_044",
+      "category": "building",
+      "anchor": {
+        "type": "bottom_center",
+        "position": [
+          -565.2451623951595,
+          -221.10601093515868,
+          723.3412993523206
+        ]
+      },
+      "dimensions": {
+        "width": 22.610149908106575,
+        "height": 40.95040722945356,
+        "length": 151.35020901009432,
+        "unit": "relative"
+      },
+      "rotation": {
+        "yaw": -145.4551359216925,
+        "unit": "degree"
+      },
+      "source": {
+        "bbox": [
+          222,
+          144,
+          252,
+          189
+        ],
+        "maskPath": "/home/ai3d/outputs/scene-spatial/task_a828a62709a8/detection/raw/masks/building_044.png"
+      },
+      "confidence": {
+        "category": 0.443359375,
+        "detection": 0.443359375,
+        "mask": 0.8,
+        "position": 0.8872668288726683,
+        "dimensions": 0.8872668288726683,
+        "rotation": 0.8872668288726683
+      }
+    },
+    {
+      "id": "building_045",
+      "category": "building",
+      "anchor": {
+        "type": "bottom_center",
+        "position": [
+          63.40480602290543,
+          -117.06036959149019,
+          388.16588776734386
+        ]
+      },
+      "dimensions": {
+        "width": 11.687992417745502,
+        "height": 30.65339770842133,
+        "length": 390.22428343993636,
+        "unit": "relative"
+      },
+      "rotation": {
+        "yaw": 171.47637930099773,
+        "unit": "degree"
+      },
+      "source": {
+        "bbox": [
+          1087,
+          174,
+          1119,
+          267
+        ],
+        "maskPath": "/home/ai3d/outputs/scene-spatial/task_a828a62709a8/detection/raw/masks/building_045.png"
+      },
+      "confidence": {
+        "category": 0.443359375,
+        "detection": 0.443359375,
+        "mask": 0.8,
+        "position": 0.95,
+        "dimensions": 0.95,
+        "rotation": 0.95
+      }
+    },
+    {
+      "id": "building_046",
+      "category": "building",
+      "anchor": {
+        "type": "bottom_center",
+        "position": [
+          -346.90328955816966,
+          -156.54951502773528,
+          512.9120747529432
+        ]
+      },
+      "dimensions": {
+        "width": 88.65768421886321,
+        "height": 12.584526760537976,
+        "length": 159.83648829313876,
+        "unit": "relative"
+      },
+      "rotation": {
+        "yaw": -101.29656373613828,
+        "unit": "degree"
+      },
+      "source": {
+        "bbox": [
+          291,
+          202,
+          393,
+          251
+        ],
+        "maskPath": "/home/ai3d/outputs/scene-spatial/task_a828a62709a8/detection/raw/masks/building_046.png"
+      },
+      "confidence": {
+        "category": 0.44140625,
+        "detection": 0.44140625,
+        "mask": 0.8,
+        "position": 0.95,
+        "dimensions": 0.95,
+        "rotation": 0.95
+      }
+    },
+    {
+      "id": "building_047",
+      "category": "building",
+      "anchor": {
+        "type": "bottom_center",
+        "position": [
+          -58.72932333321931,
+          -156.6778951256068,
+          517.4739713630655
+        ]
+      },
+      "dimensions": {
+        "width": 699.2408972960645,
+        "height": 39.39723141638822,
+        "length": 837.2384082117663,
+        "unit": "relative"
+      },
+      "rotation": {
+        "yaw": 47.75942030830912,
+        "unit": "degree"
+      },
+      "source": {
+        "bbox": [
+          6,
+          100,
+          1913,
+          556
+        ],
+        "maskPath": "/home/ai3d/outputs/scene-spatial/task_a828a62709a8/detection/raw/masks/building_047.png"
+      },
+      "confidence": {
+        "category": 0.435546875,
+        "detection": 0.435546875,
+        "mask": 0.8,
+        "position": 0.95,
+        "dimensions": 0.95,
+        "rotation": 0.95
+      }
+    },
+    {
+      "id": "building_048",
+      "category": "building",
+      "anchor": {
+        "type": "bottom_center",
+        "position": [
+          371.52821693610963,
+          -121.28986138262573,
+          406.5813652020701
+        ]
+      },
+      "dimensions": {
+        "width": 20.213234810129933,
+        "height": 46.38433883872921,
+        "length": 124.25766776889094,
+        "unit": "relative"
+      },
+      "rotation": {
+        "yaw": 134.0604573618533,
+        "unit": "degree"
+      },
+      "source": {
+        "bbox": [
+          1768,
+          144,
+          1839,
+          191
+        ],
+        "maskPath": "/home/ai3d/outputs/scene-spatial/task_a828a62709a8/detection/raw/masks/building_048.png"
+      },
+      "confidence": {
+        "category": 0.427734375,
+        "detection": 0.427734375,
+        "mask": 0.8,
+        "position": 0.95,
+        "dimensions": 0.95,
+        "rotation": 0.95
+      }
+    },
+    {
+      "id": "building_049",
+      "category": "building",
+      "anchor": {
+        "type": "bottom_center",
+        "position": [
+          167.97680785172082,
+          -114.13054549648743,
+          379.97482798185825
+        ]
+      },
+      "dimensions": {
+        "width": 143.65705545882736,
+        "height": 39.528220391136784,
+        "length": 612.0605532624458,
+        "unit": "relative"
+      },
+      "rotation": {
+        "yaw": -18.414330435358817,
+        "unit": "degree"
+      },
+      "source": {
+        "bbox": [
+          1408,
+          161,
+          1444,
+          196
+        ],
+        "maskPath": "/home/ai3d/outputs/scene-spatial/task_a828a62709a8/detection/raw/masks/building_049.png"
+      },
+      "confidence": {
+        "category": 0.42578125,
+        "detection": 0.42578125,
+        "mask": 0.8,
+        "position": 0.95,
+        "dimensions": 0.95,
+        "rotation": 0.95
+      }
+    },
+    {
+      "id": "building_050",
+      "category": "building",
+      "anchor": {
+        "type": "bottom_center",
+        "position": [
+          -123.53761889311639,
+          -97.4217400259188,
+          320.51410675782574
+        ]
+      },
+      "dimensions": {
+        "width": 29.14491865710396,
+        "height": 37.883667648490245,
+        "length": 87.95744040682632,
+        "unit": "relative"
+      },
+      "rotation": {
+        "yaw": -159.57849051979414,
+        "unit": "degree"
+      },
+      "source": {
+        "bbox": [
+          562,
+          157,
+          651,
+          281
+        ],
+        "maskPath": "/home/ai3d/outputs/scene-spatial/task_a828a62709a8/detection/raw/masks/building_050.png"
+      },
+      "confidence": {
+        "category": 0.42578125,
+        "detection": 0.42578125,
+        "mask": 0.8,
+        "position": 0.95,
+        "dimensions": 0.95,
+        "rotation": 0.95
+      }
+    },
+    {
+      "id": "road_001",
+      "category": "road",
+      "anchor": {
+        "type": "bottom_center",
+        "position": [
+          55.57023820405878,
+          -34.19845533648698,
+          113.93210521452639
+        ]
+      },
+      "dimensions": {
+        "width": 97.51942558411119,
+        "height": 2.011163892818061,
+        "length": 276.34665585086316,
+        "unit": "relative"
+      },
+      "rotation": {
+        "yaw": 117.48129253797654,
+        "unit": "degree"
+      },
+      "source": {
+        "bbox": [
+          0,
+          265,
+          1914,
+          870
+        ],
+        "maskPath": "/home/ai3d/outputs/scene-spatial/task_a828a62709a8/detection/raw/masks/road_001.png"
+      },
+      "confidence": {
+        "category": 0.8046875,
+        "detection": 0.8046875,
+        "mask": 0.8,
+        "position": 0.95,
+        "dimensions": 0.95,
+        "rotation": 0.95
+      }
+    },
+    {
+      "id": "ground_001",
+      "category": "ground",
+      "anchor": {
+        "type": "bottom_center",
+        "position": [
+          -9.108419603603926,
+          -108.1146661376858,
+          357.5309371902319
+        ]
+      },
+      "dimensions": {
+        "width": 568.7621821461049,
+        "height": 33.16567117299662,
+        "length": 633.2202741121944,
+        "unit": "relative"
+      },
+      "rotation": {
+        "yaw": 25.39582155498088,
+        "unit": "degree"
+      },
+      "source": {
+        "bbox": [
+          0,
+          0,
+          1914,
+          870
+        ],
+        "maskPath": "/home/ai3d/outputs/scene-spatial/task_a828a62709a8/detection/raw/masks/ground_001.png"
+      },
+      "confidence": {
+        "category": 0.65234375,
+        "detection": 0.65234375,
+        "mask": 0.8,
+        "position": 0.8466246297653282,
+        "dimensions": 0.8466246297653282,
+        "rotation": 0.8466246297653282
+      }
+    },
+    {
+      "id": "vegetation_region_001",
+      "category": "vegetation_region",
+      "anchor": {
+        "type": "bottom_center",
+        "position": [
+          -55.5006308791184,
+          -75.72227927677035,
+          249.70537876011988
+        ]
+      },
+      "dimensions": {
+        "width": 292.6542848030888,
+        "height": 4.646478622134714,
+        "length": 463.6828134729458,
+        "unit": "relative"
+      },
+      "rotation": {
+        "yaw": -137.01451205462865,
+        "unit": "degree"
+      },
+      "source": {
+        "bbox": [
+          0,
+          229,
+          1914,
+          870
+        ],
+        "maskPath": "/home/ai3d/outputs/scene-spatial/task_a828a62709a8/detection/raw/masks/vegetation_region_001.png"
+      },
+      "confidence": {
+        "category": 0.92578125,
+        "detection": 0.92578125,
+        "mask": 0.8,
+        "position": 0.95,
+        "dimensions": 0.95,
+        "rotation": 0.95
+      }
+    },
+    {
+      "id": "street_light_001",
+      "category": "street_light",
+      "anchor": {
+        "type": "bottom_center",
+        "position": [
+          -67.77532091755819,
+          -23.8430009669862,
+          77.90368024200019
+        ]
+      },
+      "dimensions": {
+        "width": 0.4935060271852514,
+        "height": 0.5479527708915175,
+        "length": 12.532793769956754,
+        "unit": "relative"
+      },
+      "rotation": {
+        "yaw": -141.41198535437542,
+        "unit": "degree"
+      },
+      "source": {
+        "bbox": [
+          251,
+          574,
+          263,
+          621
+        ],
+        "maskPath": "/home/ai3d/outputs/scene-spatial/task_a828a62709a8/detection/raw/masks/street_light_001.png"
+      },
+      "confidence": {
+        "category": 0.66015625,
+        "detection": 0.66015625,
+        "mask": 0.8,
+        "position": 0.95,
+        "dimensions": 0.95,
+        "rotation": 0.95
+      }
+    },
+    {
+      "id": "street_light_002",
+      "category": "street_light",
+      "anchor": {
+        "type": "bottom_center",
+        "position": [
+          81.38627952919215,
+          -21.775213529580824,
+          73.20453859444146
+        ]
+      },
+      "dimensions": {
+        "width": 0.9815222946447211,
+        "height": 0.4646616488860339,
+        "length": 14.588173546289909,
+        "unit": "relative"
+      },
+      "rotation": {
+        "yaw": 135.70700922706087,
+        "unit": "degree"
+      },
+      "source": {
+        "bbox": [
+          1828,
+          599,
+          1845,
+          658
+        ],
+        "maskPath": "/home/ai3d/outputs/scene-spatial/task_a828a62709a8/detection/raw/masks/street_light_002.png"
+      },
+      "confidence": {
+        "category": 0.65234375,
+        "detection": 0.65234375,
+        "mask": 0.8,
+        "position": 0.95,
+        "dimensions": 0.95,
+        "rotation": 0.95
+      }
+    },
+    {
+      "id": "street_light_003",
+      "category": "street_light",
+      "anchor": {
+        "type": "bottom_center",
+        "position": [
+          54.76463443221827,
+          -20.914019994070824,
+          69.97336806058257
+        ]
+      },
+      "dimensions": {
+        "width": 0.6514895222379731,
+        "height": 0.7223315067313165,
+        "length": 11.939052767351384,
+        "unit": "relative"
+      },
+      "rotation": {
+        "yaw": 144.51556308442892,
+        "unit": "degree"
+      },
+      "source": {
+        "bbox": [
+          1563,
+          619,
+          1578,
+          677
+        ],
+        "maskPath": "/home/ai3d/outputs/scene-spatial/task_a828a62709a8/detection/raw/masks/street_light_003.png"
+      },
+      "confidence": {
+        "category": 0.6328125,
+        "detection": 0.6328125,
+        "mask": 0.8,
+        "position": 0.95,
+        "dimensions": 0.95,
+        "rotation": 0.95
+      }
+    },
+    {
+      "id": "street_light_004",
+      "category": "street_light",
+      "anchor": {
+        "type": "bottom_center",
+        "position": [
+          67.24725528134758,
+          -21.18520559534357,
+          71.04970393096352
+        ]
+      },
+      "dimensions": {
+        "width": 0.4144294379261768,
+        "height": 1.2890051726453198,
+        "length": 11.512625931592993,
+        "unit": "relative"
+      },
+      "rotation": {
+        "yaw": 140.17490966853362,
+        "unit": "degree"
+      },
+      "source": {
+        "bbox": [
+          1693,
+          610,
+          1707,
+          667
+        ],
+        "maskPath": "/home/ai3d/outputs/scene-spatial/task_a828a62709a8/detection/raw/masks/street_light_004.png"
+      },
+      "confidence": {
+        "category": 0.58203125,
+        "detection": 0.58203125,
+        "mask": 0.8,
+        "position": 0.95,
+        "dimensions": 0.95,
+        "rotation": 0.95
+      }
+    },
+    {
+      "id": "street_light_005",
+      "category": "street_light",
+      "anchor": {
+        "type": "bottom_center",
+        "position": [
+          -57.38544359856203,
+          -28.058255522888004,
+          91.99762234818044
+        ]
+      },
+      "dimensions": {
+        "width": 1.2754658297875974,
+        "height": 1.2832204730200742,
+        "length": 10.27846911815648,
+        "unit": "relative"
+      },
+      "rotation": {
+        "yaw": -153.55503500589066,
+        "unit": "degree"
+      },
+      "source": {
+        "bbox": [
+          442,
+          528,
+          458,
+          561
+        ],
+        "maskPath": "/home/ai3d/outputs/scene-spatial/task_a828a62709a8/detection/raw/masks/street_light_005.png"
+      },
+      "confidence": {
+        "category": 0.57421875,
+        "detection": 0.57421875,
+        "mask": 0.8,
+        "position": 0.95,
+        "dimensions": 0.95,
+        "rotation": 0.95
+      }
+    },
+    {
+      "id": "street_light_006",
+      "category": "street_light",
+      "anchor": {
+        "type": "bottom_center",
+        "position": [
+          74.94135693213845,
+          -28.575231462846894,
+          95.60762735220625
+        ]
+      },
+      "dimensions": {
+        "width": 0.9526425935602312,
+        "height": 1.7134725180763888,
+        "length": 16.832732869205984,
+        "unit": "relative"
+      },
+      "rotation": {
+        "yaw": 145.2927890965738,
+        "unit": "degree"
+      },
+      "source": {
+        "bbox": [
+          1587,
+          516,
+          1603,
+          561
+        ],
+        "maskPath": "/home/ai3d/outputs/scene-spatial/task_a828a62709a8/detection/raw/masks/street_light_006.png"
+      },
+      "confidence": {
+        "category": 0.55859375,
+        "detection": 0.55859375,
+        "mask": 0.8,
+        "position": 0.95,
+        "dimensions": 0.95,
+        "rotation": 0.95
+      }
+    },
+    {
+      "id": "street_light_007",
+      "category": "street_light",
+      "anchor": {
+        "type": "bottom_center",
+        "position": [
+          43.44303114408231,
+          -20.705238539943636,
+          69.12014396698922
+        ]
+      },
+      "dimensions": {
+        "width": 0.6761730766061849,
+        "height": 0.8018390792312488,
+        "length": 11.386311425116816,
+        "unit": "relative"
+      },
+      "rotation": {
+        "yaw": 152.46900891733182,
+        "unit": "degree"
+      },
+      "source": {
+        "bbox": [
+          1441,
+          622,
+          1451,
+          685
+        ],
+        "maskPath": "/home/ai3d/outputs/scene-spatial/task_a828a62709a8/detection/raw/masks/street_light_007.png"
+      },
+      "confidence": {
+        "category": 0.5390625,
+        "detection": 0.5390625,
+        "mask": 0.8,
+        "position": 0.95,
+        "dimensions": 0.95,
+        "rotation": 0.95
+      }
+    },
+    {
+      "id": "street_light_008",
+      "category": "street_light",
+      "anchor": {
+        "type": "bottom_center",
+        "position": [
+          44.488638359991945,
+          -29.252449311619507,
+          97.41078219618377
+        ]
+      },
+      "dimensions": {
+        "width": 1.1029364303423002,
+        "height": 1.5313133115457092,
+        "length": 26.188119019476332,
+        "unit": "relative"
+      },
+      "rotation": {
+        "yaw": 156.38722616871192,
+        "unit": "degree"
+      },
+      "source": {
+        "bbox": [
+          1322,
+          484,
+          1340,
+          575
+        ],
+        "maskPath": "/home/ai3d/outputs/scene-spatial/task_a828a62709a8/detection/raw/masks/street_light_008.png"
+      },
+      "confidence": {
+        "category": 0.53515625,
+        "detection": 0.53515625,
+        "mask": 0.8,
+        "position": 0.95,
+        "dimensions": 0.95,
+        "rotation": 0.95
+      }
+    },
+    {
+      "id": "street_light_009",
+      "category": "street_light",
+      "anchor": {
+        "type": "bottom_center",
+        "position": [
+          -25.852475099128263,
+          -18.164392223660133,
+          59.71974554897003
+        ]
+      },
+      "dimensions": {
+        "width": 0.4344083180816487,
+        "height": 0.6337792161160449,
+        "length": 8.665569395217638,
+        "unit": "relative"
+      },
+      "rotation": {
+        "yaw": -158.51699825785647,
+        "unit": "degree"
+      },
+      "source": {
+        "bbox": [
+          617,
+          678,
+          627,
+          742
+        ],
+        "maskPath": "/home/ai3d/outputs/scene-spatial/task_a828a62709a8/detection/raw/masks/street_light_009.png"
+      },
+      "confidence": {
+        "category": 0.53515625,
+        "detection": 0.53515625,
+        "mask": 0.8,
+        "position": 0.95,
+        "dimensions": 0.95,
+        "rotation": 0.95
+      }
+    },
+    {
+      "id": "street_light_010",
+      "category": "street_light",
+      "anchor": {
+        "type": "bottom_center",
+        "position": [
+          -58.37599133924452,
+          -31.45331081506485,
+          103.21482178131336
+        ]
+      },
+      "dimensions": {
+        "width": 1.1504805682604822,
+        "height": 1.676762170069786,
+        "length": 14.652539206144198,
+        "unit": "relative"
+      },
+      "rotation": {
+        "yaw": -155.43804009495184,
+        "unit": "degree"
+      },
+      "source": {
+        "bbox": [
+          482,
+          491,
+          497,
+          529
+        ],
+        "maskPath": "/home/ai3d/outputs/scene-spatial/task_a828a62709a8/detection/raw/masks/street_light_010.png"
+      },
+      "confidence": {
+        "category": 0.4921875,
+        "detection": 0.4921875,
+        "mask": 0.8,
+        "position": 0.95,
+        "dimensions": 0.95,
+        "rotation": 0.95
+      }
+    },
+    {
+      "id": "street_light_011",
+      "category": "street_light",
+      "anchor": {
+        "type": "bottom_center",
+        "position": [
+          1.2764123229849766,
+          -19.25145927714053,
+          63.70542636171516
+        ]
+      },
+      "dimensions": {
+        "width": 0.6580982886296091,
+        "height": 0.6933437179692632,
+        "length": 9.657424835538457,
+        "unit": "relative"
+      },
+      "rotation": {
+        "yaw": 179.733847272033,
+        "unit": "degree"
+      },
+      "source": {
+        "bbox": [
+          966,
+          649,
+          974,
+          719
+        ],
+        "maskPath": "/home/ai3d/outputs/scene-spatial/task_a828a62709a8/detection/raw/masks/street_light_011.png"
+      },
+      "confidence": {
+        "category": 0.48828125,
+        "detection": 0.48828125,
+        "mask": 0.8,
+        "position": 0.95,
+        "dimensions": 0.95,
+        "rotation": 0.95
+      }
+    },
+    {
+      "id": "street_light_012",
+      "category": "street_light",
+      "anchor": {
+        "type": "bottom_center",
+        "position": [
+          -61.770720626280955,
+          -36.07699743942391,
+          118.4620267868571
+        ]
+      },
+      "dimensions": {
+        "width": 1.145203338409817,
+        "height": 2.028757054128839,
+        "length": 9.870969573277392,
+        "unit": "relative"
+      },
+      "rotation": {
+        "yaw": -155.55120530012158,
+        "unit": "degree"
+      },
+      "source": {
+        "bbox": [
+          514,
+          459,
+          527,
+          481
+        ],
+        "maskPath": "/home/ai3d/outputs/scene-spatial/task_a828a62709a8/detection/raw/masks/street_light_012.png"
+      },
+      "confidence": {
+        "category": 0.44140625,
+        "detection": 0.44140625,
+        "mask": 0.8,
+        "position": 0.95,
+        "dimensions": 0.95,
+        "rotation": 0.95
+      }
+    },
+    {
+      "id": "street_light_013",
+      "category": "street_light",
+      "anchor": {
+        "type": "bottom_center",
+        "position": [
+          -63.35692745119038,
+          -38.77185209785588,
+          127.35429180935502
+        ]
+      },
+      "dimensions": {
+        "width": 1.3690686131673733,
+        "height": 2.2210799396513865,
+        "length": 13.543341888406161,
+        "unit": "relative"
+      },
+      "rotation": {
+        "yaw": -160.33083248280784,
+        "unit": "degree"
+      },
+      "source": {
+        "bbox": [
+          530,
+          439,
+          546,
+          470
+        ],
+        "maskPath": "/home/ai3d/outputs/scene-spatial/task_a828a62709a8/detection/raw/masks/street_light_013.png"
+      },
+      "confidence": {
+        "category": 0.419921875,
+        "detection": 0.419921875,
+        "mask": 0.8,
+        "position": 0.95,
+        "dimensions": 0.95,
+        "rotation": 0.95
+      }
+    },
+    {
+      "id": "street_light_014",
+      "category": "street_light",
+      "anchor": {
+        "type": "bottom_center",
+        "position": [
+          41.154537733282815,
+          -27.131311372227504,
+          90.34583085257796
+        ]
+      },
+      "dimensions": {
+        "width": 0.4405753132238637,
+        "height": 1.5241140163213611,
+        "length": 10.142658232823436,
+        "unit": "relative"
+      },
+      "rotation": {
+        "yaw": 157.6351137177734,
+        "unit": "degree"
+      },
+      "source": {
+        "bbox": [
+          1320,
+          537,
+          1327,
+          572
+        ],
+        "maskPath": "/home/ai3d/outputs/scene-spatial/task_a828a62709a8/detection/raw/masks/street_light_014.png"
+      },
+      "confidence": {
+        "category": 0.37109375,
+        "detection": 0.37109375,
+        "mask": 0.8,
+        "position": 0.95,
+        "dimensions": 0.95,
+        "rotation": 0.95
+      }
+    },
+    {
+      "id": "street_light_015",
+      "category": "street_light",
+      "anchor": {
+        "type": "bottom_center",
+        "position": [
+          -8.234871772845361,
+          -26.05354217613889,
+          86.07132390450731
+        ]
+      },
+      "dimensions": {
+        "width": 0.8040808130608066,
+        "height": 1.621242646006953,
+        "length": 6.41195409742177,
+        "unit": "relative"
+      },
+      "rotation": {
+        "yaw": -171.92176221147216,
+        "unit": "degree"
+      },
+      "source": {
+        "bbox": [
+          872,
+          559,
+          880,
+          583
+        ],
+        "maskPath": "/home/ai3d/outputs/scene-spatial/task_a828a62709a8/detection/raw/masks/street_light_015.png"
+      },
+      "confidence": {
+        "category": 0.349609375,
+        "detection": 0.349609375,
+        "mask": 0.8,
+        "position": 0.95,
+        "dimensions": 0.95,
+        "rotation": 0.95
+      }
+    },
+    {
+      "id": "street_light_016",
+      "category": "street_light",
+      "anchor": {
+        "type": "bottom_center",
+        "position": [
+          -7.973430642694466,
+          -26.60754038484415,
+          87.90779760028684
+        ]
+      },
+      "dimensions": {
+        "width": 1.0876310811693974,
+        "height": 1.8682449824344851,
+        "length": 9.1256104149101,
+        "unit": "relative"
+      },
+      "rotation": {
+        "yaw": -178.268263921544,
+        "unit": "degree"
+      },
+      "source": {
+        "bbox": [
+          879,
+          548,
+          887,
+          583
+        ],
+        "maskPath": "/home/ai3d/outputs/scene-spatial/task_a828a62709a8/detection/raw/masks/street_light_016.png"
+      },
+      "confidence": {
+        "category": 0.345703125,
+        "detection": 0.345703125,
+        "mask": 0.8,
+        "position": 0.95,
+        "dimensions": 0.95,
+        "rotation": 0.95
+      }
+    },
+    {
+      "id": "street_light_017",
+      "category": "street_light",
+      "anchor": {
+        "type": "bottom_center",
+        "position": [
+          -61.52819875043605,
+          -36.74521357536109,
+          120.67608119546566
+        ]
+      },
+      "dimensions": {
+        "width": 2.3025468809905014,
+        "height": 2.184949638324188,
+        "length": 26.67703426201078,
+        "unit": "relative"
+      },
+      "rotation": {
+        "yaw": -161.9953286914618,
+        "unit": "degree"
+      },
+      "source": {
+        "bbox": [
+          517,
+          439,
+          548,
+          499
+        ],
+        "maskPath": "/home/ai3d/outputs/scene-spatial/task_a828a62709a8/detection/raw/masks/street_light_017.png"
+      },
+      "confidence": {
+        "category": 0.328125,
+        "detection": 0.328125,
+        "mask": 0.8,
+        "position": 0.95,
+        "dimensions": 0.95,
+        "rotation": 0.95
+      }
+    },
+    {
+      "id": "street_light_018",
+      "category": "street_light",
+      "anchor": {
+        "type": "bottom_center",
+        "position": [
+          -53.95367325016759,
+          -31.818496958233556,
+          104.48640902712113
+        ]
+      },
+      "dimensions": {
+        "width": 1.6708044944425438,
+        "height": 1.6683470564166292,
+        "length": 16.98940483242518,
+        "unit": "relative"
+      },
+      "rotation": {
+        "yaw": -153.33948313751225,
+        "unit": "degree"
+      },
+      "source": {
+        "bbox": [
+          527,
+          474,
+          540,
+          528
+        ],
+        "maskPath": "/home/ai3d/outputs/scene-spatial/task_a828a62709a8/detection/raw/masks/street_light_018.png"
+      },
+      "confidence": {
+        "category": 0.318359375,
+        "detection": 0.318359375,
+        "mask": 0.8,
+        "position": 0.95,
+        "dimensions": 0.95,
+        "rotation": 0.95
+      }
+    },
+    {
+      "id": "street_light_019",
+      "category": "street_light",
+      "anchor": {
+        "type": "bottom_center",
+        "position": [
+          -37.25685396638741,
+          -23.72202559426324,
+          77.94161403267816
+        ]
+      },
+      "dimensions": {
+        "width": 1.0012104724912554,
+        "height": 0.8981064504291197,
+        "length": 3.424465271270506,
+        "unit": "relative"
+      },
+      "rotation": {
+        "yaw": -171.31632304257653,
+        "unit": "degree"
+      },
+      "source": {
+        "bbox": [
+          568,
+          593,
+          577,
+          612
+        ],
+        "maskPath": "/home/ai3d/outputs/scene-spatial/task_a828a62709a8/detection/raw/masks/street_light_019.png"
+      },
+      "confidence": {
+        "category": 0.30078125,
+        "detection": 0.30078125,
+        "mask": 0.8,
+        "position": 0.95,
+        "dimensions": 0.95,
+        "rotation": 0.95
+      }
+    },
+    {
+      "id": "street_light_020",
+      "category": "street_light",
+      "anchor": {
+        "type": "bottom_center",
+        "position": [
+          49.6495816765828,
+          -32.60534670869151,
+          108.57683053321334
+        ]
+      },
+      "dimensions": {
+        "width": 0.19641755363451807,
+        "height": 0.5026436228788604,
+        "length": 1.5038764998457808,
+        "unit": "relative"
+      },
+      "rotation": {
+        "yaw": -82.54078314141583,
+        "unit": "degree"
+      },
+      "source": {
+        "bbox": [
+          1327,
+          483,
+          1342,
+          497
+        ],
+        "maskPath": "/home/ai3d/outputs/scene-spatial/task_a828a62709a8/detection/raw/masks/street_light_020.png"
+      },
+      "confidence": {
+        "category": 0.291015625,
+        "detection": 0.291015625,
+        "mask": 0.8,
+        "position": 0.95,
+        "dimensions": 0.95,
+        "rotation": 0.95
+      }
+    },
+    {
+      "id": "street_light_021",
+      "category": "street_light",
+      "anchor": {
+        "type": "bottom_center",
+        "position": [
+          -37.17398439564674,
+          -23.773963737670666,
+          78.11462396820203
+        ]
+      },
+      "dimensions": {
+        "width": 1.4402994223342525,
+        "height": 0.90624971707404,
+        "length": 3.754536806923454,
+        "unit": "relative"
+      },
+      "rotation": {
+        "yaw": -171.1457883006037,
+        "unit": "degree"
+      },
+      "source": {
+        "bbox": [
+          568,
+          569,
+          578,
+          609
+        ],
+        "maskPath": "/home/ai3d/outputs/scene-spatial/task_a828a62709a8/detection/raw/masks/street_light_021.png"
+      },
+      "confidence": {
+        "category": 0.283203125,
+        "detection": 0.283203125,
+        "mask": 0.8,
+        "position": 0.95,
+        "dimensions": 0.95,
+        "rotation": 0.95
+      }
+    },
+    {
+      "id": "street_light_022",
+      "category": "street_light",
+      "anchor": {
+        "type": "bottom_center",
+        "position": [
+          -59.305367313571985,
+          -31.84941726517066,
+          104.51186662213594
+        ]
+      },
+      "dimensions": {
+        "width": 1.301817830459549,
+        "height": 1.674121407370285,
+        "length": 10.90422106585713,
+        "unit": "relative"
+      },
+      "rotation": {
+        "yaw": -153.89025554649896,
+        "unit": "degree"
+      },
+      "source": {
+        "bbox": [
+          479,
+          491,
+          490,
+          518
+        ],
+        "maskPath": "/home/ai3d/outputs/scene-spatial/task_a828a62709a8/detection/raw/masks/street_light_022.png"
+      },
+      "confidence": {
+        "category": 0.26953125,
+        "detection": 0.26953125,
+        "mask": 0.8,
+        "position": 0.95,
+        "dimensions": 0.95,
+        "rotation": 0.95
+      }
+    },
+    {
+      "id": "street_light_023",
+      "category": "street_light",
+      "anchor": {
+        "type": "bottom_center",
+        "position": [
+          -16.442923611001433,
+          -25.678078736764526,
+          84.71138741486132
+        ]
+      },
+      "dimensions": {
+        "width": 0.7257563489248486,
+        "height": 1.4394031658785038,
+        "length": 5.50453159423283,
+        "unit": "relative"
+      },
+      "rotation": {
+        "yaw": -173.84203678109023,
+        "unit": "degree"
+      },
+      "source": {
+        "bbox": [
+          793,
+          562,
+          801,
+          588
+        ],
+        "maskPath": "/home/ai3d/outputs/scene-spatial/task_a828a62709a8/detection/raw/masks/street_light_023.png"
+      },
+      "confidence": {
+        "category": 0.26953125,
+        "detection": 0.26953125,
+        "mask": 0.8,
+        "position": 0.95,
+        "dimensions": 0.95,
+        "rotation": 0.95
+      }
+    },
+    {
+      "id": "street_light_024",
+      "category": "street_light",
+      "anchor": {
+        "type": "bottom_center",
+        "position": [
+          35.478540313803215,
+          -26.827094634086823,
+          89.25794221671804
+        ]
+      },
+      "dimensions": {
+        "width": 0.90273831020269,
+        "height": 1.3973094716508516,
+        "length": 4.1461109299762455,
+        "unit": "relative"
+      },
+      "rotation": {
+        "yaw": 156.81827581176668,
+        "unit": "degree"
+      },
+      "source": {
+        "bbox": [
+          1272,
+          550,
+          1283,
+          566
+        ],
+        "maskPath": "/home/ai3d/outputs/scene-spatial/task_a828a62709a8/detection/raw/masks/street_light_024.png"
+      },
+      "confidence": {
+        "category": 0.265625,
+        "detection": 0.265625,
+        "mask": 0.8,
+        "position": 0.95,
+        "dimensions": 0.95,
+        "rotation": 0.95
+      }
+    },
+    {
+      "id": "street_light_025",
+      "category": "street_light",
+      "anchor": {
+        "type": "bottom_center",
+        "position": [
+          -8.238117336658167,
+          -25.972311367323588,
+          85.80255197857211
+        ]
+      },
+      "dimensions": {
+        "width": 0.8165789474130314,
+        "height": 1.6131115975259873,
+        "length": 6.494199737307255,
+        "unit": "relative"
+      },
+      "rotation": {
+        "yaw": -172.25715202761896,
+        "unit": "degree"
+      },
+      "source": {
+        "bbox": [
+          870,
+          558,
+          880,
+          583
+        ],
+        "maskPath": "/home/ai3d/outputs/scene-spatial/task_a828a62709a8/detection/raw/masks/street_light_025.png"
+      },
+      "confidence": {
+        "category": 0.265625,
+        "detection": 0.265625,
+        "mask": 0.8,
+        "position": 0.95,
+        "dimensions": 0.95,
+        "rotation": 0.95
+      }
+    },
+    {
+      "id": "street_light_026",
+      "category": "street_light",
+      "anchor": {
+        "type": "bottom_center",
+        "position": [
+          -56.197691170296494,
+          -27.480718085087616,
+          90.10408234650866
+        ]
+      },
+      "dimensions": {
+        "width": 1.3448766246049635,
+        "height": 1.2796790389986286,
+        "length": 14.671263950384642,
+        "unit": "relative"
+      },
+      "rotation": {
+        "yaw": -151.71640647632623,
+        "unit": "degree"
+      },
+      "source": {
+        "bbox": [
+          442,
+          528,
+          459,
+          583
+        ],
+        "maskPath": "/home/ai3d/outputs/scene-spatial/task_a828a62709a8/detection/raw/masks/street_light_026.png"
+      },
+      "confidence": {
+        "category": 0.259765625,
+        "detection": 0.259765625,
+        "mask": 0.8,
+        "position": 0.95,
+        "dimensions": 0.95,
+        "rotation": 0.95
+      }
+    },
+    {
+      "id": "street_light_027",
+      "category": "street_light",
+      "anchor": {
+        "type": "bottom_center",
+        "position": [
+          -37.21777719557848,
+          -23.754678502522896,
+          78.05019641547605
+        ]
+      },
+      "dimensions": {
+        "width": 1.2045512268838934,
+        "height": 0.8965939416495565,
+        "length": 3.6258856432022526,
+        "unit": "relative"
+      },
+      "rotation": {
+        "yaw": -171.7485919132874,
+        "unit": "degree"
+      },
+      "source": {
+        "bbox": [
+          569,
+          580,
+          578,
+          611
+        ],
+        "maskPath": "/home/ai3d/outputs/scene-spatial/task_a828a62709a8/detection/raw/masks/street_light_027.png"
+      },
+      "confidence": {
+        "category": 0.25390625,
+        "detection": 0.25390625,
+        "mask": 0.8,
+        "position": 0.95,
+        "dimensions": 0.95,
+        "rotation": 0.95
+      }
+    }
+  ],
+  "artifacts": {
+    "detections": "detection/detections.json",
+    "ground": "spatial/ground.json",
+    "coordinateSystem": "spatial/coordinate_system.json"
+  }
+}

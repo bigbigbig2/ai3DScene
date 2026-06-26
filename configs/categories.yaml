@@ -1,4 +1,4 @@
-categories:
+﻿categories:
   ground:
     display_name: "ground"
     object_mode: "region"
@@ -6,15 +6,29 @@ categories:
       - "ground"
       - "paved ground"
       - "open ground area"
+    scene_prompts:
+      industrial_park:
+        - "plaza pavement"
+        - "building courtyard"
+        - "sidewalk"
+        - "open paved ground area"
+        - "flat non-road ground"
+        - "site base plane"
     allow_tile_inference: false
 
   building:
     display_name: "building"
     object_mode: "instance"
     base_prompts:
-      - "industrial building"
-      - "factory building"
-      - "plant building"
+      - "building"
+    scene_prompts:
+      industrial_park:
+        - "high-rise office tower"
+        - "glass curtain wall building"
+        - "commercial podium building"
+        - "modern office building"
+        - "rectangular tower building"
+        - "urban building cluster"
     allow_tile_inference: true
 
   rectangular_treatment_pool:
@@ -33,6 +47,14 @@ categories:
       - "road"
       - "paved internal road"
       - "facility access road"
+    scene_prompts:
+      industrial_park:
+        - "multi-lane urban road"
+        - "wide asphalt road"
+        - "road intersection"
+        - "lane markings"
+        - "crosswalk"
+        - "campus access road"
     allow_tile_inference: false
 
   water:
@@ -51,6 +73,14 @@ categories:
       - "vegetation area"
       - "grass and trees area"
       - "green planted area"
+    scene_prompts:
+      industrial_park:
+        - "grass areas"
+        - "green landscape zones"
+        - "landscaped courtyard"
+        - "green belt"
+        - "trees along road"
+        - "campus planting area"
     allow_tile_inference: false
 
   street_light:
@@ -60,4 +90,11 @@ categories:
       - "street light"
       - "road lamp"
       - "lamp post"
+    scene_prompts:
+      industrial_park:
+        - "street lamp"
+        - "small vertical light pole"
+        - "roadside light pole"
+        - "plaza lighting pole"
+        - "campus lamp post"
     allow_tile_inference: true
