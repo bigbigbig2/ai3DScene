@@ -9,7 +9,7 @@ import numpy as np
 from scene_spatial.spatial.solver_utils import load_detections, load_mask, resolve_task_path
 
 GROUND_CATEGORIES = {"ground", "road", "vegetation_region"}
-EXCLUSION_CATEGORIES = {"building", "rectangular_treatment_pool", "tree", "street_light", "water", "sky", "vehicle", "person"}
+EXCLUSION_CATEGORIES = {"building", "rectangular_treatment_pool", "tank", "silo", "cooling_tower", "tree", "street_light", "water", "sky", "vehicle", "person"}
 
 
 @dataclass(frozen=True)

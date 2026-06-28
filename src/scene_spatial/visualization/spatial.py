@@ -15,6 +15,9 @@ CATEGORY_COLORS: dict[str, tuple[int, int, int]] = {
     "vegetation_region": (34, 197, 94),
     "tree": (22, 163, 74),
     "street_light": (245, 158, 11),
+    "tank": (219, 39, 119),
+    "silo": (180, 83, 9),
+    "cooling_tower": (59, 130, 246),
 }
 
 def object_layout_preview_path(task_dir: Path) -> Path:
@@ -114,7 +117,7 @@ td, th {{ border-bottom: 1px solid #e2e8f0; padding: 6px; text-align: left; vert
 import * as THREE from 'https://cdn.jsdelivr.net/npm/three@0.165.0/build/three.module.js';
 import {{ OrbitControls }} from 'https://cdn.jsdelivr.net/npm/three@0.165.0/examples/jsm/controls/OrbitControls.js';
 const objects = {objects_json};
-const colorMap = {{ building: 0x2563eb, road: 0x475569, ground: 0xd8c38a, vegetation_region: 0x22c55e, tree: 0x16a34a, street_light: 0xf59e0b }};
+const colorMap = {{ building: 0x2563eb, road: 0x475569, ground: 0xd8c38a, vegetation_region: 0x22c55e, tree: 0x16a34a, street_light: 0xf59e0b, tank: 0xdb2777, silo: 0xb45309, cooling_tower: 0x3b82f6 }};
 const container = document.getElementById('canvas');
 const scene = new THREE.Scene();
 scene.background = new THREE.Color(0xf8fafc);

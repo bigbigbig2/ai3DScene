@@ -40,6 +40,52 @@ categories:
       - "long rectangular open-air basin"
     allow_tile_inference: true
 
+  tank:
+    display_name: "tank"
+    object_mode: "instance"
+    base_prompts:
+      - "industrial storage tank"
+      - "cylindrical tank"
+      - "large metal tank"
+      - "white storage tank"
+    scene_prompts:
+      industrial_park:
+        - "cylindrical industrial storage tank"
+        - "large vertical tank"
+        - "fuel storage tank"
+        - "chemical tank"
+    allow_tile_inference: true
+
+  silo:
+    display_name: "silo"
+    object_mode: "instance"
+    base_prompts:
+      - "industrial silo"
+      - "cylindrical silo"
+      - "tall storage silo"
+      - "grain silo"
+    scene_prompts:
+      industrial_park:
+        - "tall cylindrical silo"
+        - "white industrial silo"
+        - "vertical storage silo"
+    allow_tile_inference: true
+
+  cooling_tower:
+    display_name: "cooling tower"
+    object_mode: "instance"
+    base_prompts:
+      - "cooling tower"
+      - "industrial cooling tower"
+      - "hyperbolic cooling tower"
+      - "large cooling tower"
+    scene_prompts:
+      industrial_park:
+        - "round cooling tower"
+        - "industrial cooling structure"
+        - "cooling tower with chimney"
+    allow_tile_inference: true
+
   road:
     display_name: "road"
     object_mode: "region"

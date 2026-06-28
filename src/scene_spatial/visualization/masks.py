@@ -16,6 +16,9 @@ CATEGORY_COLORS: dict[str, tuple[int, int, int]] = {
     "street_light": (245, 158, 11),
     "water": (14, 165, 233),
     "rectangular_treatment_pool": (124, 58, 237),
+    "tank": (219, 39, 119),
+    "silo": (180, 83, 9),
+    "cooling_tower": (59, 130, 246),
 }
 
 def masks_visualization_path(task_dir: Path) -> Path:

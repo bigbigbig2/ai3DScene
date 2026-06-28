@@ -31,6 +31,9 @@ PATTERN_TYPES = ("grid", "row", "along_path", "cluster", "symmetric", "repeated"
 INSTANCE_CATEGORIES = {
     Category.BUILDING,
     Category.RECTANGULAR_TREATMENT_POOL,
+    Category.TANK,
+    Category.SILO,
+    Category.COOLING_TOWER,
     Category.TREE,
     Category.STREET_LIGHT,
 }

@@ -63,6 +63,9 @@
               "ground",
               "building",
               "rectangular_treatment_pool",
+              "tank",
+              "silo",
+              "cooling_tower",
               "road",
               "water",
               "vegetation_region",
@@ -108,7 +111,7 @@
         "required": ["category", "patternType", "semanticConfidence"],
         "properties": {
           "category": {
-            "enum": ["building", "rectangular_treatment_pool", "tree", "street_light"]
+            "enum": ["building", "rectangular_treatment_pool", "tank", "silo", "cooling_tower", "tree", "street_light"]
           },
           "patternType": {
             "enum": ["grid", "row", "along_path", "cluster", "symmetric", "repeated", "unknown"]

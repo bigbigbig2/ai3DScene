@@ -11,6 +11,9 @@ supported_image_types:
   - architectural_render
 priority_categories:
   - building
+  - tank
+  - silo
+  - cooling_tower
   - road
   - ground
   - vegetation_region
@@ -19,6 +22,9 @@ priority_categories:
 spatial_rules:
   allow_grid_detection_for:
     - building
+    - tank
+    - silo
+    - cooling_tower
     - tree
     - street_light
   ground_candidate_sources:

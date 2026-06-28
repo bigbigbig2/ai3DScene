@@ -25,6 +25,8 @@ def validate_object_geometry(obj: dict[str, Any]) -> dict[str, Any]:
         reasons.append("oversized_dimension")
     if category == "building" and point_count < 24:
         reasons.append("building_too_few_points")
+    if category in {"tank", "silo", "cooling_tower"} and point_count < 24:
+        reasons.append(f"{category}_too_few_points")
     if category == "street_light" and point_count < 5:
         reasons.append("street_light_too_few_points")
     if category == "tree" and point_count < 8:
