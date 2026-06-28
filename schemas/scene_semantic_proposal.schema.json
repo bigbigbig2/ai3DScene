@@ -1,4 +1,4 @@
-{
+﻿{
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://scene-spatial.local/schemas/scene_semantic_proposal.schema.json",
   "title": "SceneSemanticProposal",
@@ -66,6 +66,7 @@
               "road",
               "water",
               "vegetation_region",
+              "tree",
               "street_light"
             ]
           },
@@ -107,7 +108,7 @@
         "required": ["category", "patternType", "semanticConfidence"],
         "properties": {
           "category": {
-            "enum": ["building", "rectangular_treatment_pool", "street_light"]
+            "enum": ["building", "rectangular_treatment_pool", "tree", "street_light"]
           },
           "patternType": {
             "enum": ["grid", "row", "along_path", "cluster", "symmetric", "repeated", "unknown"]
@@ -140,3 +141,4 @@
     }
   }
 }
+

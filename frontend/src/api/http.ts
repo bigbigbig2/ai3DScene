@@ -1,7 +1,7 @@
-import axios from 'axios'
+﻿import axios from 'axios'
 
 export const apiTargetLabel =
-  import.meta.env.VITE_SCENE_API_TARGET || 'http://10.7.3.50:8181'
+  'http://10.7.3.50:8181'
 
 export const http = axios.create({
   baseURL: '',
@@ -18,3 +18,5 @@ http.interceptors.response.use(
     return Promise.reject(error)
   },
 )
+
+

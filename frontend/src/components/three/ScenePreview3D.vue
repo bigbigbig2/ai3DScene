@@ -1,4 +1,4 @@
-﻿<script setup lang="ts">
+<script setup lang="ts">
 import { computed, nextTick, onBeforeUnmount, ref, watch } from 'vue'
 import * as THREE from 'three'
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js'
@@ -74,10 +74,10 @@ const legendItems = [
   { category: 'building', label: '建筑', color: '#2563eb' },
   { category: 'road', label: '道路', color: '#475569' },
   { category: 'ground', label: '地面', color: '#d8c38a' },
-  { category: 'vegetation_region', label: '绿化', color: '#22c55e' },
+  { category: 'vegetation_region', label: '草地/绿化区', color: '#22c55e' },
+  { category: 'tree', label: '树木', color: '#16a34a' },
   { category: 'street_light', label: '路灯', color: '#f59e0b' },
 ]
-
 watch(dialogVisible, (visible) => {
   if (visible) {
     void nextTick(renderScene)
@@ -132,6 +132,7 @@ function passesConfidence(object: SpatialObject): boolean {
   if (isRegion(object.category)) return true
   const score = scoreOf(object)
   if (object.category === 'street_light') return score >= 0.45
+  if (object.category === 'tree') return score >= 0.35
   return score >= 0.55
 }
 
@@ -140,6 +141,7 @@ function opacityFor(object: SpatialObject): number {
   if (object.category === 'ground') return 0.22
   if (object.category === 'road') return 0.72
   if (object.category === 'vegetation_region') return 0.42
+  if (object.category === 'tree') return score < 0.35 ? 0.42 : 0.9
   if (object.category === 'street_light') return score < 0.45 ? 0.38 : 1
   return score < 0.55 ? 0.35 : 0.88
 }
@@ -227,9 +229,16 @@ function buildBboxItems(objects: SpatialObject[], onlyHighConfidence: boolean): 
       return { object, x, y: 0, z: zFromBottom, width, depth, height, yaw: 0, opacity: opacityFor(object) }
     }
 
-    if (object.category === 'street_light') {
+
+  if (object.category === 'street_light') {
       const height = THREE.MathUtils.clamp((bh / imageHeight) * 22, 1.1, 5)
       return { object, x, y: 0, z: zFromBottom, width: 0.18, depth: 0.18, height, yaw: 0, opacity: opacityFor(object) }
+    }
+
+    if (object.category === 'tree') {
+      const crown = THREE.MathUtils.clamp((bw / imageWidth) * sceneWidth, 0.35, 3.2)
+      const height = THREE.MathUtils.clamp((bh / imageHeight) * 28, 1.2, 8)
+      return { object, x, y: 0, z: zFromBottom, width: crown, depth: crown, height, yaw: 0, opacity: opacityFor(object) }
     }
 
     const width = THREE.MathUtils.clamp((bw / imageWidth) * sceneWidth, 0.8, sceneWidth)
@@ -245,6 +254,7 @@ function categoryColor(category: string): number {
     road: 0x475569,
     ground: 0xd8c38a,
     vegetation_region: 0x22c55e,
+    tree: 0x16a34a,
     street_light: 0xf59e0b,
   }[category] ?? 0x8b5cf6
 }
@@ -280,6 +290,20 @@ function createPreviewMesh(item: PreviewItem): THREE.Object3D {
   const { object, x, y, z, width, depth, height, yaw } = item
   const material = materialFor(item)
 
+  if (object.category === 'tree') {
+    const group = new THREE.Group()
+    const crownRadius = THREE.MathUtils.clamp(Math.min(width, depth) * 0.5, 0.12, 2.2)
+    const trunkHeight = Math.max(height * 0.45, crownRadius * 1.2)
+    const trunkRadius = THREE.MathUtils.clamp(crownRadius * 0.16, 0.025, 0.22)
+    const trunk = new THREE.Mesh(new THREE.CylinderGeometry(trunkRadius, trunkRadius * 1.15, trunkHeight, 10), material)
+    trunk.position.y = trunkHeight / 2
+    const crown = new THREE.Mesh(new THREE.SphereGeometry(crownRadius, 16, 10), material)
+    crown.position.y = trunkHeight + crownRadius * 0.72
+    group.add(trunk, crown)
+    group.position.set(x, y, z)
+    group.rotation.y = yaw
+    return group
+  }
   if (object.category === 'street_light') {
     const group = new THREE.Group()
     const poleHeight = Math.max(height, width, depth)

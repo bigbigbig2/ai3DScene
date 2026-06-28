@@ -1,7 +1,8 @@
 ﻿from __future__ import annotations
 
 from scene_spatial.stages.base import PipelineStage
-from scene_spatial.stages.fake_pipeline import BuildSamTasksStage, ExportStage, MaskPostprocessStage
+from scene_spatial.stages.fake_pipeline import BuildSamTasksStage, MaskPostprocessStage
+from scene_spatial.stages.export import ExportStage
 from scene_spatial.stages.model_stages import MogeEstimateStage, SamSegmentStage
 from scene_spatial.stages.spatial_solve import (
     EvaluateStage,
@@ -26,3 +27,4 @@ def build_stage_registry() -> dict[str, PipelineStage]:
         EvaluateStage(),
     ]
     return {stage.name: stage for stage in stages}
+

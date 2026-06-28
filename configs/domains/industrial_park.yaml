@@ -14,10 +14,12 @@ priority_categories:
   - road
   - ground
   - vegetation_region
+  - tree
   - street_light
 spatial_rules:
   allow_grid_detection_for:
     - building
+    - tree
     - street_light
   ground_candidate_sources:
     - road

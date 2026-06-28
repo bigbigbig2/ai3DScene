@@ -12,11 +12,11 @@ CATEGORY_COLORS: dict[str, tuple[int, int, int]] = {
     "road": (71, 85, 105),
     "ground": (216, 195, 138),
     "vegetation_region": (34, 197, 94),
+    "tree": (22, 163, 74),
     "street_light": (245, 158, 11),
     "water": (14, 165, 233),
     "rectangular_treatment_pool": (124, 58, 237),
 }
-
 
 def masks_visualization_path(task_dir: Path) -> Path:
     return task_dir / "visualizations" / "masks.png"

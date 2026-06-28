@@ -13,9 +13,9 @@ CATEGORY_COLORS: dict[str, tuple[int, int, int]] = {
     "road": (71, 85, 105),
     "ground": (216, 195, 138),
     "vegetation_region": (34, 197, 94),
+    "tree": (22, 163, 74),
     "street_light": (245, 158, 11),
 }
-
 
 def object_layout_preview_path(task_dir: Path) -> Path:
     return task_dir / "visualizations" / "object_layout.png"
@@ -106,15 +106,15 @@ td, th {{ border-bottom: 1px solid #e2e8f0; padding: 6px; text-align: left; vert
 <main>
   <div id="canvas"></div>
   <aside>
-    <section class="card"><h3>对象数量</h3><table><tbody>{counts_rows}</tbody></table></section>
-    <section class="card"><h3>可疑尺寸对象</h3><table><tbody>{suspicious_rows or '<tr><td>暂无</td></tr>'}</tbody></table></section>
+    <section class="card"><h3>闂傚倸鍊搁崐鎼佸磹瀹勬噴褰掑炊椤掑鏅悷婊冪Ч濠€渚€姊虹紒妯虹伇婵☆偄瀚板鍛婄瑹閳ь剟寮婚悢鍏尖拻闁圭虎鍠楅鏍⒑闁偛鑻崢鎼佹煟閹虹偛顩柟骞垮灩閳规垹鈧綆浜為崐鐐烘⒑闂堟侗鐒鹃柛搴″暱铻ｅ〒姘ｅ亾婵﹦绮幏鍛村川婵犲倹娈樻繝鐢靛仩椤曟粎绮婚幘宕囨殾閻熸瑥瀚閬嶆煛婢跺鐏ラ柛銈嗗灦缁绘稒娼忛崜褏袣濡炪倖娲樻穱娲Φ閹版澘绠抽柟瀵稿濡差垶姊绘担渚劸缂佺粯顨婂畷鎴﹀箛椤斿墽鐓撻梺鎼炲劀閳ь剟寮?/h3><table><tbody>{counts_rows}</tbody></table></section>
+    <section class="card"><h3>闂傚倸鍊搁崐鎼佸磹閹间礁纾瑰瀣捣閻棗銆掑锝呬壕濡ょ姷鍋涢ˇ鐢稿极閹剧粯鍋愰柛鎰紦閻㈢粯淇婇悙顏勨偓鏍偋濠婂牆纾绘繛鎴欏灩閸ㄥ倿鏌涘畝鈧崑鐐烘偂濞嗘挻鐓欐い鏍ㄧ矊椤ｅ吋銇勯妷銉█闁哄本鐩獮瀣偐濞村鐎伴梻浣告惈閻ジ宕伴弽顓炵畺婵犲﹤鍚橀悢鍏煎殥闁靛牆鎳庨崣濠囨⒒閸屾瑨鍏岀紒顕呭灣閺侇噣骞掑Δ浣规珖濡炪倕绻愰悧鍡涙嫅閻斿摜绠鹃柟瀵稿€戝璺虹哗濞寸姴顑嗛悡鏇㈡煃閳轰礁鏋ゆ繛鍫涘灩闇夐柣鎾虫捣閻掑憡鎱ㄦ繝鍐┿仢妤犵偞鐗犻幃娆徝圭€ｎ亙澹曞┑掳鍊曢幊搴ｇ玻濡ゅ懏鐓涚€广儱楠搁獮鏍磼閻樺磭澧ǎ鍥э躬婵″爼宕ㄩ鍏碱仭闂備胶顭堥鍐礉瀹ュ洦宕叉繛鎴欏灩闁卞洭鏌ｉ弬娆炬疇闁搞倕顑夊鐑樻姜閹殿喛绐楅梺鎼炲姀濞夋盯锝?/h3><table><tbody>{suspicious_rows or '<tr><td>闂傚倸鍊搁崐鎼佸磹閹间礁纾瑰瀣捣閻棗銆掑锝呬壕濡ょ姷鍋為悧鐘汇€侀弴銏犵厬闁兼亽鍎抽埥澶愭懚閺嶎厽鐓曟繛鎴濆船楠炴﹢鏌ㄥ☉娆戞噰婵﹥妞介幊锟犲Χ閸涱喚鈧箖鏌?/td></tr>'}</tbody></table></section>
   </aside>
 </main>
 <script type="module">
 import * as THREE from 'https://cdn.jsdelivr.net/npm/three@0.165.0/build/three.module.js';
 import {{ OrbitControls }} from 'https://cdn.jsdelivr.net/npm/three@0.165.0/examples/jsm/controls/OrbitControls.js';
 const objects = {objects_json};
-const colorMap = {{ building: 0x2563eb, road: 0x475569, ground: 0xd8c38a, vegetation_region: 0x22c55e, street_light: 0xf59e0b }};
+const colorMap = {{ building: 0x2563eb, road: 0x475569, ground: 0xd8c38a, vegetation_region: 0x22c55e, tree: 0x16a34a, street_light: 0xf59e0b }};
 const container = document.getElementById('canvas');
 const scene = new THREE.Scene();
 scene.background = new THREE.Color(0xf8fafc);
@@ -152,10 +152,22 @@ raw.forEach(({{o,p,d}}) => {{
   let mesh;
   if (o.category === 'street_light') {{
     mesh = new THREE.Mesh(new THREE.CylinderGeometry(0.05, 0.07, Math.max(d.height, d.length) * scale, 10), material);
+  }} else if (o.category === 'tree') {{
+    const group = new THREE.Group();
+    const crownRadius = Math.max(Math.min(d.width, d.length) * scale * 0.5, 0.08);
+    const trunkHeight = Math.max(d.height * scale * 0.45, crownRadius * 1.2);
+    const trunk = new THREE.Mesh(new THREE.CylinderGeometry(crownRadius * 0.16, crownRadius * 0.18, trunkHeight, 10), material);
+    trunk.position.y = trunkHeight / 2;
+    const crown = new THREE.Mesh(new THREE.SphereGeometry(crownRadius, 14, 10), material);
+    crown.position.y = trunkHeight + crownRadius * 0.72;
+    group.add(trunk, crown);
+    mesh = group;
   }} else {{
     mesh = new THREE.Mesh(new THREE.BoxGeometry(Math.max(d.width*scale, .08), Math.max(d.height*scale, .08), Math.max(d.length*scale, .08)), material);
   }}
-  mesh.position.set((p[0]-center[0])*scale, (p[1]-center[1])*scale + mesh.geometry.parameters.height / 2, (p[2]-center[2])*scale);
+  const meshHeight = mesh.geometry?.parameters?.height || Math.max(d.height * scale, 0.08);
+  const baseY = (p[1]-center[1])*scale;
+  mesh.position.set((p[0]-center[0])*scale, o.category === 'tree' ? baseY : baseY + meshHeight / 2, (p[2]-center[2])*scale);
   mesh.rotation.y = THREE.MathUtils.degToRad(o.rotation?.yaw || 0);
   mesh.name = o.id;
   scene.add(mesh);
@@ -184,7 +196,8 @@ def _render_topdown(
         dims = obj.get("dimensions", {}) if isinstance(obj.get("dimensions"), dict) else {}
         if not isinstance(position, list | tuple) or len(position) < 3:
             continue
-        positioned.append((obj, float(position[0]), float(position[2]), float(dims.get("width", 1) or 1), float(dims.get("length", 1) or 1)))
+        display_w, display_d = _display_footprint_dims(obj, dims)
+        positioned.append((obj, float(position[0]), float(position[2]), display_w, display_d))
     if not positioned:
         return None
 
@@ -214,21 +227,63 @@ def _render_topdown(
         half_w = max(obj_w * scale * 0.5, 2.0)
         half_d = max(obj_d * scale * 0.5, 2.0)
         cx, cy = px(x), py(z)
-        draw.rectangle([cx - half_w, cy - half_d, cx + half_w, cy + half_d], outline=color, fill=(*color,), width=2)
+        if category in {"tree", "street_light"}:
+            radius = max(min(half_w, half_d), 3.0)
+            draw.ellipse([cx - radius, cy - radius, cx + radius, cy + radius], outline=color, fill=color, width=2)
+        elif category in {"ground", "road", "vegetation_region"}:
+            draw.rectangle([cx - half_w, cy - half_d, cx + half_w, cy + half_d], outline=color, fill=_soft_color(color), width=2)
+        else:
+            fill = _soft_color(color) if obj.get("needsReview") else color
+            draw.rectangle([cx - half_w, cy - half_d, cx + half_w, cy + half_d], outline=color, fill=fill, width=2)
         draw.text((cx + 4, cy + 4), str(obj.get("id", "-"))[:22], fill=(15, 23, 42), font=font)
 
     if groups:
         by_id = {str(obj.get("id")): (px(x), py(z)) for obj, x, z, _, _ in positioned}
         for group in groups:
-            ids = group.get("objectIds", [])
-            pts = [by_id[str(obj_id)] for obj_id in ids if str(obj_id) in by_id]
-            if len(pts) >= 2:
-                draw.line(pts, fill=(239, 68, 68), width=3)
+            category = str(group.get("category", "unknown"))
+            group_color = CATEGORY_COLORS.get(category, (239, 68, 68))
+            hull = group.get("hull", [])
+            if isinstance(hull, list) and len(hull) >= 3:
+                hull_pts = [(px(float(point[0])), py(float(point[1]))) for point in hull if isinstance(point, list | tuple) and len(point) >= 2]
+                if len(hull_pts) >= 3:
+                    draw.line(hull_pts + [hull_pts[0]], fill=group_color, width=2)
+            edges = group.get("edges", [])
+            if isinstance(edges, list):
+                for edge in edges:
+                    if not isinstance(edge, list | tuple) or len(edge) < 2:
+                        continue
+                    a = by_id.get(str(edge[0]))
+                    b = by_id.get(str(edge[1]))
+                    if a and b:
+                        draw.line([a, b], fill=(239, 68, 68), width=2)
+            for row in group.get("rows", []) if isinstance(group.get("rows"), list) else []:
+                row_ids = row.get("objectIds", []) if isinstance(row, dict) else []
+                row_pts = [by_id[str(obj_id)] for obj_id in row_ids if str(obj_id) in by_id]
+                if len(row_pts) >= 2:
+                    draw.line(row_pts, fill=(14, 165, 233), width=1)
 
     target.parent.mkdir(parents=True, exist_ok=True)
     image.save(target)
     return target
 
+
+
+def _display_footprint_dims(obj: dict[str, Any], dims: dict[str, Any]) -> tuple[float, float]:
+    category = str(obj.get("category", "unknown"))
+    width = max(float(dims.get("width", 1.0) or 1.0), 0.02)
+    length = max(float(dims.get("length", 1.0) or 1.0), 0.02)
+    cap = 80.0
+    if obj.get("needsReview") or max(width, length) > cap:
+        width = min(width, cap)
+        length = min(length, cap)
+    if category in {"tree", "street_light"}:
+        width = max(min(width, cap), 0.25)
+        length = max(min(length, cap), 0.25)
+    return width, length
+
+
+def _soft_color(color: tuple[int, int, int]) -> tuple[int, int, int]:
+    return tuple(int(channel * 0.45 + 255 * 0.55) for channel in color)
 
 def _read_json(path: Path) -> dict[str, Any]:
     if not path.exists():

@@ -1,4 +1,4 @@
-﻿categories:
+categories:
   ground:
     display_name: "ground"
     object_mode: "region"
@@ -70,18 +70,35 @@
     display_name: "vegetation region"
     object_mode: "region"
     base_prompts:
-      - "vegetation area"
-      - "grass and trees area"
-      - "green planted area"
+      - "grass area"
+      - "low vegetation area"
+      - "green belt ground cover"
     scene_prompts:
       industrial_park:
-        - "grass areas"
-        - "green landscape zones"
-        - "landscaped courtyard"
-        - "green belt"
-        - "trees along road"
-        - "campus planting area"
+        - "grass lawn area"
+        - "low green landscape zone"
+        - "planted ground cover"
+        - "green belt without individual trees"
+        - "landscaped grass courtyard"
+        - "flat planted area"
     allow_tile_inference: false
+
+  tree:
+    display_name: "tree"
+    object_mode: "instance"
+    base_prompts:
+      - "tree"
+      - "individual tree"
+      - "single tree crown"
+    scene_prompts:
+      industrial_park:
+        - "trees along road"
+        - "individual roadside tree"
+        - "small ornamental tree"
+        - "campus tree"
+        - "tree with trunk and crown"
+        - "isolated landscape tree"
+    allow_tile_inference: true
 
   street_light:
     display_name: "street light"

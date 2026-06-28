@@ -1,4 +1,4 @@
-import { defineConfig } from 'vite';
+﻿import { defineConfig } from 'vite';
 import vue from '@vitejs/plugin-vue';
 var apiTarget = 'http://10.7.3.50:8181';
 export default defineConfig({
@@ -26,3 +26,5 @@ export default defineConfig({
         },
     },
 });
+
+

@@ -1,4 +1,4 @@
-﻿from __future__ import annotations
+from __future__ import annotations
 
 from typing import Literal
 
@@ -31,6 +31,7 @@ PATTERN_TYPES = ("grid", "row", "along_path", "cluster", "symmetric", "repeated"
 INSTANCE_CATEGORIES = {
     Category.BUILDING,
     Category.RECTANGULAR_TREATMENT_POOL,
+    Category.TREE,
     Category.STREET_LIGHT,
 }
 REGION_CATEGORIES = {

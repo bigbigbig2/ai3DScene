@@ -25,13 +25,13 @@ class PromptBuilder:
             category_config = category_map[category_key]
             prompts = self._prompts_for_scene(category_config, scene_type)
             prompts.extend(category_proposal.promptHints)
-            deduped_prompts = list(dict.fromkeys(prompt.strip() for prompt in prompts if prompt.strip()))
+            deduped_prompts = self._sanitize_prompts(category_key, prompts)
 
             tasks.append(
                 {
                     "category": category_key,
                     "objectMode": category_proposal.objectMode.value,
-                    "conceptPrompts": deduped_prompts[:8],
+                    "conceptPrompts": deduped_prompts,
                     "runFullImage": True,
                     "runTiles": bool(category_config.get("allow_tile_inference", False)),
                     "expectedScale": category_proposal.expectedScale,
@@ -44,6 +44,14 @@ class PromptBuilder:
         }
 
     @staticmethod
+    def _sanitize_prompts(category_key: str, prompts: list[str]) -> list[str]:
+        deduped = list(dict.fromkeys(prompt.strip() for prompt in prompts if prompt.strip()))
+        if category_key != "vegetation_region":
+            return deduped[:8]
+        tree_terms = ("tree", "trees", "trunk", "crown", "roadside tree", "along road")
+        return [prompt for prompt in deduped if not any(term in prompt.lower() for term in tree_terms)][:8]
+
+    @staticmethod
     def _prompts_for_scene(category_config: dict[str, Any], scene_type: str) -> list[str]:
         scene_prompts = category_config.get("scene_prompts", {})
         if isinstance(scene_prompts, dict):
@@ -51,3 +59,4 @@ class PromptBuilder:
             if isinstance(prompts, list) and prompts:
                 return list(prompts)
         return list(category_config.get("base_prompts", []))
+

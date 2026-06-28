@@ -51,6 +51,7 @@ class Category(StrEnum):
     ROAD = "road"
     WATER = "water"
     VEGETATION_REGION = "vegetation_region"
+    TREE = "tree"
     STREET_LIGHT = "street_light"
 
 
